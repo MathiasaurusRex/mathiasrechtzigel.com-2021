@@ -1,21 +1,21 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
+  "title": "Mathias Rechtzigel",
+  "url": "https://mathiasrechtzigel.com/",
   "language": "en",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "description": "Experience Technologist focused on creating an internet that works for everyone.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Experience Technologist focused on creating an internet that works for everyone.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "id": "https://mathiasrechtzigel.com/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://example.com/feed/feed.json"
+    "url": "https://mathiasrechtzigel.com/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
+    "name": "Mathias Rechtzigel",
+    "email": "mathiasrechtzigel@gmail.com",
+    "url": "https://mathiasrechtzigel.com/about-me/"
   }
 }
