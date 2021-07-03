@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
-title: About Me
-templateClass: tmpl-post
+title: About
+templateClass: layout-post
 eleventyNavigation:
   key: About Me
   order: 3

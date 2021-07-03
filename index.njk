@@ -1,10 +1,14 @@
 ---
 layout: layouts/home.njk
 tag: introduction
-title: Experience Technologst,<br> focused on creating an<br> internet that works for everyone.
+title: Home
+tagline: Experience Technologst,<br> focused on creating an<br> internet that works for everyone.
 eleventyNavigation:
   key: Home
   order: 1
+metadata:
+  title: Home | Mathias Rechtzigel
+
 ---
 {% set maxPosts = collections.posts.length | min(3) %}
 <h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
