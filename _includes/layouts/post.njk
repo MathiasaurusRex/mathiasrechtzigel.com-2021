@@ -1,14 +1,9 @@
 ---
 layout: layouts/base.njk
-templateClass: tmpl-post
+templateClass: layout-post
 ---
-<h1>{{ title }}</h1>
 
-<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-{%- for tag in tags | filterTagList -%}
-{%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
-<a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-{%- endfor %}
+{% include "components/article-banner.njk" %}
 
 {{ content | safe }}
 

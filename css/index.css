@@ -16,26 +16,50 @@ html {
   color: var(--font-dark);
 }
 
-a:visited {
-  color: var(--font-dark);
-}
-
 body {
   padding: 0;
   margin: 0;
   font-size: 1.8rem;
 }
 
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+a,
+a:visited {
+  color: var(--font-dark);
+}
+
+
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2.4rem;
 }
 
 /* header */
 header {
   background-color: var(--primary);
   display: flex;
+  padding: 2.4rem;
+  justify-content: space-between;
 }
 
 header a {
@@ -63,13 +87,13 @@ header .navigation a {
 }
 
 .title-banner h1 {
-  margin: 0;
   font-size: 4.8rem;
 }
+
 .title-banner h1 small {
   display: block;
   font-size: 1.8rem;
-  font-family: --var(--font-mono);
+  font-family: var(--font-mono);
   text-transform: uppercase;
 }
 /* end banner */
