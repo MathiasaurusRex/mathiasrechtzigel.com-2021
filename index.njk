@@ -7,14 +7,19 @@ eleventyNavigation:
   key: Home
   order: 1
 metadata:
-  title: Home | Mathias Rechtzigel
-
+  title: Mathias Rechtzigel
+bannerCTA:
+    text: More about me
+    href: /about
 ---
 {% set maxPosts = collections.posts.length | min(3) %}
-<h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
+{% set totalPosts = collections.posts.length %}
+<h2 class="section-head">Writing</h2>
 
 {% set postslist = collections.posts | head(-3) %}
 {% set postslistCounter = collections.posts | length %}
 {% include "components/postslist.njk" %}
 
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+
+
+<p>Showing {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}. Find {{ totalPosts }} more articles in the <a href="{{ '/posts/' | url }}">the archive</a>.</p>

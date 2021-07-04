@@ -42,12 +42,6 @@ h5 {
   font-size: 1.4rem;
 }
 
-a,
-a:visited {
-  color: var(--font-dark);
-}
-
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -90,7 +84,7 @@ header .navigation a {
   font-size: 4.8rem;
 }
 
-.title-banner h1 small {
+.section-head {
   display: block;
   font-size: 1.8rem;
   font-family: var(--font-mono);

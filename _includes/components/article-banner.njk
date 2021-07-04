@@ -1,7 +1,7 @@
 <section class="title-banner title-banner--outer">
   <div class="title-banner--inner">
     <h1>
-      <small>
+      <small class="section-head">
             {%- for tag in tags | filterTagList -%}
             {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
             <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}
@@ -10,6 +10,8 @@
       </small>
       {{ title | safe}}
     </h1>
-    <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+    {%- if date  %}
+      <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+    {%- endif %}
   </div>
 </section>

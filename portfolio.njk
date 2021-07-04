@@ -1,0 +1,13 @@
+---
+layout: layouts/home.njk
+permalink: /portfolio/
+templateClass: layout-post
+tagline: Portfolio
+title: Portfolio
+eleventyNavigation:
+  key: Portfolio
+  order: 4
+---
+
+{% set postslist = collections.projects %}
+{% include "components/postslist.njk" %}
