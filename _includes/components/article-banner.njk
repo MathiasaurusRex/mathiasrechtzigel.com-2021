@@ -1,13 +1,6 @@
 <section class="title-banner title-banner--outer">
   <div class="title-banner--inner">
     <h1>
-      <small class="section-head">
-            {%- for tag in tags | filterTagList -%}
-            {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
-            <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}
-            </a>
-            {%- endfor %}
-      </small>
       {{ title | safe}}
     </h1>
     {%- if date  %}

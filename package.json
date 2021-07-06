@@ -14,9 +14,9 @@
     "url": "git://github.com/11ty/eleventy-base-blog.git"
   },
   "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
-    "url": "https://zachleat.com/"
+    "name": "Mathias Rechtzigel",
+    "email": "mathiasrechtzigel@gmail.com",
+    "url": "https://mathiasrechtzigel.com"
   },
   "license": "MIT",
   "bugs": {

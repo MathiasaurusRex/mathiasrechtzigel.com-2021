@@ -3,9 +3,12 @@ layout: layouts/base.njk
 templateClass: layout-post
 ---
 
+<article>
 {% include "components/article-banner.njk" %}
-
+<div class="content-wrapper">
 {{ content | safe }}
+</div>
+</article>
 
 {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}

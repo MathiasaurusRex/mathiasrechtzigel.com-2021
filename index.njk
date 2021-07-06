@@ -2,10 +2,7 @@
 layout: layouts/home.njk
 tag: introduction
 title: Home
-tagline: Experience Technologst,<br> focused on creating an<br> internet that works for everyone.
-eleventyNavigation:
-  key: Home
-  order: 1
+tagline: Experience Technologist,<br> focused on creating<br> websites that work for everyone.
 metadata:
   title: Mathias Rechtzigel
 bannerCTA:
@@ -14,7 +11,7 @@ bannerCTA:
 ---
 {% set maxPosts = collections.posts.length | min(3) %}
 {% set totalPosts = collections.posts.length %}
-<h2 class="section-head">Writing</h2>
+<h2 class="section-head">Recent Writing</h2>
 
 {% set postslist = collections.posts | head(-3) %}
 {% set postslistCounter = collections.posts | length %}
