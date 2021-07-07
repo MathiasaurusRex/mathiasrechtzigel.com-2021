@@ -1,10 +1,8 @@
 <section class="title-banner title-banner--outer">
-  <div class="title-banner--inner">
     <h1>
       {{ title | safe}}
     </h1>
     {%- if date  %}
       <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
     {%- endif %}
-  </div>
 </section>

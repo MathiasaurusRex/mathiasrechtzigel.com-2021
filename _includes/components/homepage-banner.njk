@@ -1,12 +1,9 @@
-<section class="title-banner title-banner--outer">
-  <div class="title-banner--inner">
+<section class="title-banner">
     <h1>
       <small class="section-head">{{ tag }}</small>
       {{ tagline | safe}}
     </h1>
-    <p>Put a short paragraph up here that describes each of the pages. This should be two sentences, the first of which is a statement and the second describes that statement.</p>
     {%- if bannerCTA %}
       <a class="button" href={{bannerCTA.href}}>{{bannerCTA.text}}</a>
     {%- endif %}
-  </div>
 </section>

@@ -18,10 +18,10 @@
   --font-size--h5: 1.4rem;
   --font-size--p: 1.8rem;
 
-  --base-max-width: 100em;
+  --base-max-width: 100rem;
   --base-grid-columns: repeat(6, minmax(0, 1fr));
   --large-grid-columns: repeat(8, minmax(0, 1fr));
-  --base-grid-gap: calc(var(--base-spacing) * 2);
+  --base-grid-gap: var(--font-size--h3);
 }
 
 @media (max-width: 1000px) {
@@ -45,6 +45,10 @@ html {
 
 body {
   font-size: var(--font-size--p);
+  display: grid;
+  grid-template-columns: var(--base-grid-columns);
+  grid-column-gap: var(--base-grid-gap);
+  justify-content: space-between;
 }
 
 h1,
@@ -95,12 +99,14 @@ a:visited {
 header {
   background-color: var(--primary);
   display: flex;
-  padding: 2.4rem;
   justify-content: space-between;
+  grid-column: 1/7;
+  padding: 2.4rem 0;
 }
 
 header a {
   text-decoration: none;
+  padding: 0 2.4rem;
 }
 
 header .navigation {
@@ -110,10 +116,16 @@ header .navigation {
   margin: 0;
 }
 
-header .navigation a {
-  padding: 2rem;
-}
 /* end header */
+
+/* Layouts*/
+.layout-home {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: var(--base-grid-columns);
+  grid-column-gap: var(--base-grid-gap);
+  justify-content: space-between;
+}
 
 /* banner */
 
@@ -127,6 +139,7 @@ header .navigation a {
   border-bottom: 1px solid var(--dark);
   padding-bottom: 2.4rem;
   margin-bottom: 2.4rem;
+  grid-column: 1/7;
 }
 
 .title-banner--inner {
@@ -149,10 +162,6 @@ header .navigation a {
 }
 
 /* end banner */
-
-.content-wrapper {
-  padding: 2.4rem;
-}
 
 /* button */
 .button {
