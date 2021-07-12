@@ -2,8 +2,7 @@
     <h1>
       {{ title | safe}}
     </h1>
-    <p class="lead-p"></p>
     {%- if date  %}
-      <time datetime="{{ page.date | htmlDateString }}">Published {{ page.date | readableDate }}</time>
+      <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
     {%- endif %}
 </section>

@@ -4,18 +4,18 @@ templateClass: layout-post
 ---
 
 <article>
-{% include "components/article-banner.njk" %}
-<div class="content-wrapper">
-{{ content | safe }}
-</div>
+  {% include "components/article-banner.njk" %}
+  <div class="content-wrapper">
+  {{ content | safe }}
+  </div>
 </article>
 
 {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
 {%- if nextPost or previousPost %}
 <hr>
-<ul>
-  {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-  {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-</ul>
+<div class="article-footer">
+  {%- if nextPost %}<a href="{{ nextPost.url | url }}" class="button"> Next: {{ nextPost.data.title }}</a>{% endif %}
+  {%- if previousPost %}<a href="{{ previousPost.url | url }}" class="button">Previous: {{ previousPost.data.title }}</a>{% endif %}
+</div>
 {%- endif %}
