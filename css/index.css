@@ -162,6 +162,7 @@ ul,ol {
   line-height: 2;
 }
 .lead-p {
+  font-family: var(--font-title);
   font-size: var(--font-size--h3);
   line-height: 1.5;
   font-weight: bold;
@@ -175,14 +176,19 @@ a:visited {
   display: inline-block;
   transition: .3s all ease;
   font-weight: bold;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+a:hover {
+  text-shadow: 0px 0px 10px white;
 }
 a:after {
   content: "";
   display: block;
   height: 5px;
-  width: 100%;
+  width: calc(100% + 6px);
   position: absolute;
-  left: 0;
+  left: -3px;
   bottom: 0;
   background: var(--color-gradient);
   transition: .3s all ease;
