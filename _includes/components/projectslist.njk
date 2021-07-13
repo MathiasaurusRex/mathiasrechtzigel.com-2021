@@ -1,0 +1,14 @@
+
+<ol class="projects-list">
+{% for project in projectslist | reverse %}
+  <li class="article-list--item{% if project.url == url %} article-list--item-active{% endif %}">
+    <a href="{{ project.url | url }}" class="article-list--link">
+      <img src="https://via.placeholder.com/150" alt=""/>
+      <div class="article-list--title">
+        {% if project.data.title %}{{ project.data.title }}{% else %}<code>{{ project.url }}</code>{% endif %}
+      </div>
+      <div class="article-list--description">{{project.data.description}}</div>
+    </a>
+  </li>
+{% endfor %}
+</ol>

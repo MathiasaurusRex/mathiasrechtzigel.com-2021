@@ -18,6 +18,7 @@
           <li class="navigation-item{% if entry.url == page.url %} navigation-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
         {%- endfor %}
         </ul>
+        
     </header>
 
     <main{% if templateClass %} class="layout {{ templateClass }}"{% endif %}>
