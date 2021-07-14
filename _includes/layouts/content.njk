@@ -3,8 +3,9 @@ layout: layouts/base.njk
 templateClass: layout-content
 ---
 
-{% include "components/content-title.njk" %}
-
-<div class="content-wrapper">
-{{ content | safe }}
-</div>
+<article>
+    {% include "components/content-title.njk" %}
+    <div class="content-wrapper">
+    {{ content | safe }}
+    </div>
+</article>
