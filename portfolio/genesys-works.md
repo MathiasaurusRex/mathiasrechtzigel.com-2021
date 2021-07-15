@@ -8,13 +8,18 @@ layout: layouts/post.njk
 logo: ../img/logo/GenesysWorks.png
 ---
 
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+<p class="lead-p">During the Summer of 2017 I took a break from the digital world to teach two groups of about twenty young professionals at Genesys Works. At the end of a nine week program all of the young professionals earned a paid internship during their senior year of High School.<br><br> It was a transformative experience that revitalized my love for technology and teaching others.</p>
 
-## Section Header
+## High Expectations, High Support
 
-<a href="{{ '/posts/firstpost/' | url }}">First post</a>
-<a href="{{ '/posts/thirdpost/' | url }}">Third post</a>
+Before we were able to train the young professionals (they're not kids by the way, kids are actually what you call young goats) we had to go through our training. One thing that stuck with me was something they mentioned in passing: "We're expecting a lot from these folks, and they're giving up their final summer before college. We have to meet those high expectations with an equal level of support so that they are successful."
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+<strong>High expectations requires a high level of support</strong>
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+This is how I lead every single one of the teams I've been on. I'll dive into content entry. Copying and pasting german, french, and spanish translations until we have everything in. I'll lead usability studies. I'll jump in and spend hours talking with legal, information security, and management to ensure that the rest of the team can focus on what they care about.
+
+These young professionals left a lasting impact on me. I do the right thing and support others because I know that they would call me out if I didn't.
+
+<img src="/img/genesysworks/cohort-1.jpeg" alt="Image of me with a cohort of about 20 young professionals!"/>
+
+<img src="/img/genesysworks/cohort-2.jpeg" alt="Another image of me with a cohort of about 20 young professionals!"/>

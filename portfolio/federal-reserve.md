@@ -8,9 +8,13 @@ layout: layouts/post.njk
 logo: ../img/logo/MNFRB_Logo_LeftAligned_BlueCircle.png
 ---
 
-<p class="lead-p">How  can you nudge the best and brightest economic organizations in the country?<br> One measurable win at a time.</p>
+<p class="lead-p">The Federal Reserve Bank of Minneapolis is one of twelve Federal Reserve Banks. When I joined in 2019 they were kicking off a reimagining of how they would serve the public:<br><br>"Pursing an economy that works for all of us."</p>
 
-When I joined the Federal Reserve Bank of Minneapolis in 2019 the the application development group was a year into their <i>Agile Transformation</i>. Unfortunately they lacked a dedicated Front End Development, User Experience and Accessibility resource. That's where I came in: not only could I do the work, but I could pitch and convince executive level sponsors to invest in an accessible, reusable and performant system that could support a 30+ year volume of content that they had to migrate from their legacy system.
+In 2019 the the application development group was a year into their <i>Agile Transformation</i>. They identified a gap in a dedicated Front End Development, User Experience and accessibility resource. 
+
+That's where I came in: not only could I do the work, but I could be a thought leader and work alongside our executive level sponsors to invest in an accessible, reusable and performant systems that could support a 30+ year volume of content that they had to migrate from their legacy system.
+
+In addition to this, they could point to a successful project. It wasn't just a pie in the sky dream. I had brought a 10+ year track record of delivering responsive and flexible websites that could easily be modified based on the needs of our stakeholders. 
 
 ## Consistency for thousands of economic papers both new and old.
 As an economic research organization the Federal Reserve Bank of Minneapolis publishes A LOT OF PAPERS and suplimentary educational material. With three core personas: <strong>uninformed</strong>, <strong>informed</strong>, and <strong>academic</strong> the Federal Reserve Bank of Minneapolis creates personalized content in service of it's mission of <a href="https://minneapolisfed.org/article/2020/welcome">"Pursuing an economy that works for all of us"</a>.
@@ -62,13 +66,30 @@ Oh no. The developer is far from when they made the change that they can't quite
 
 ## Multi-platform Consistency
 
-Responsive design was table-stakes in 2019, now users expect that the content they see is consistent across all of their platforms. Luckily we were able to add a few lines of automated meta tag magic via Sitecore to ensure that when the public shared an article on Linkedin, Twitter, or Facebook that it was consistent across all of the platoforms.
+Responsive design was table-stakes in 2019, now users expect that the content they see is consistent across all of their platforms. Luckily we were able to add a few lines of automated meta tag magic via Sitecore to ensure that when the public or one of our partners shared an article on Linkedin, Twitter, or Facebook it would use our branded images.
 
-- Screenshot on Linkedin, Twitter, Facebook
+In addition, this allowed our social media professional to spend less time wrangling images, tiles, and descriptions and more time focusing on a long-term content strategy. More with less and being good stewards of the public funds.
 
-## Winning hearts, minds... and budgets
+<img src="/img/minneapolisfed/social-1.png" alt="Image of a MinneapolisFed.org website shared by the Boston Fed, with all branding on Twitter."/>
 
+<img src="/img/minneapolisfed/social-2.png" alt="Image of a MinneapolisFed.org website shared by the Minneapolis Fed, with all branding on Linkedin."/>
 
+## Winning hearts, minds...<br> and budgets
+
+We launched <a href="https://minneapolisfed.org">Minneapolisfed.org</a> eight months after I joined. It was like having chewbacca in the pilot seat and telling him to punch it. During and after this project I was assigned to more larger and more ambitious projects.
+
+<ul>
+  <li>I conducted technology forecasting that set the direction for a 20+ person technology team.
+  </li>
+  <li>Highlighted and defined a headless content strategy that would leverage Sitecore 9.3's JSS functionality.</li>
+  <li>Pitched and acquired funding for a Customer Experience and User Experience team, to support the Treasury Department that was comprised of User Experience Architects, Researchers, Technologists and Product Designers</li>
+  <li>Lead the procurement and security vetting process on a suite of tools to support secure usability testing with the public</li>
+  <li>..and much more!</li>  
+</ul>
+
+But most of all, working within the Federal Reserve Bank of Minneapolis gave me a greater appreciation for public service at all levels of government. There are some extremely talented folks out there who are making sure that the government is running smoothly. It was an honor to work alongside them.
+
+<small>Disclaimer: all images and information were pulled from public sources</small>
 <script>
 function initComparisons() {
   var x, i;

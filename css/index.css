@@ -38,6 +38,12 @@ html {
   
   --color-gradient: linear-gradient(12deg, var(--teal) 0%, var(--pink) 100%);
 
+  --box-shadow: inset 0 4px 7px 1px #fff,
+  inset 0 -5px 20px rgba(173, 186, 204, .25),
+  0 2px 6px rgba(0, 21, 64, .14),
+  0 10px 20px rgba(0, 21, 64, .05);
+
+
 /* 
   --base-max-width: 100rem;
   --base-grid-columns: repeat(6, minmax(0, 1fr));
@@ -82,7 +88,7 @@ body {
   padding-bottom: 50px;
 }
 
-html:after, html:before {
+/* html:after, html:before {
   content: "";
   will-change: top left;
   backface-visibility: hidden;
@@ -92,7 +98,7 @@ html:after, html:before {
   width: var(--space-small);
   background: var(--color-gradient);
   z-index: 21000;
-}
+} */
 
 html:after {
   right: 0;
@@ -174,28 +180,23 @@ a:visited {
   color: var(--color-text);
   position: relative;
   text-decoration: none;
-  display: inline-block;
   transition: .3s all ease;
   font-weight: bold;
 }
 a:hover {
   text-shadow: 0px 0px 10px white;
 }
-a:after {
-  content: "";
-  display: block;
-  height: 5px;
-  width: calc(100% + 8px);
-  position: absolute;
-  left: -4px;
-  bottom: 0;
-  background: var(--color-gradient);
+a {
+  text-decoration: none;
+  background-image: var(--color-gradient);
+  background-size: 100% 4px, 0 4px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
   transition: .3s all ease;
-  z-index: -1;
 }
 
-a:hover:after {
-  height: 100%;
+a:hover {
+  background-size: 100% 20px, 100% 20px;
 }
 
 *::selection {
@@ -274,6 +275,7 @@ header a {
   padding: 0 var(--space-medium);
   font-size: var(--font-size--h3);
   font-family: var(--font-title);
+  background: none;
 }
 
 header .navigation {
@@ -419,6 +421,12 @@ code {
   margin-top: 150px;
 }
 
+.content-wrapper img {
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: var(--box-shadow);
+}
+
 
 /* Mockup Screens */
 .device {
@@ -426,16 +434,14 @@ code {
   position: relative;
   box-sizing: border-box;
   background: #fff;
-  box-shadow: inset 0 4px 7px 1px #fff,
-    inset 0 -5px 20px rgba(173, 186, 204, .25),
-    0 2px 6px rgba(0, 21, 64, .14),
-    0 10px 20px rgba(0, 21, 64, .05);
+  box-shadow: var(--box-shadow);
 }
 
 .device img {
   width: 100%;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, .24);
+  box-shadow: none;
 }
 
 .device::before,
@@ -444,10 +450,7 @@ code {
   display: block;
   position: absolute;
   background: #fff;
-  box-shadow: inset 0 4px 7px 1px #fff,
-    inset 0 -5px 20px rgba(173, 186, 204, .25),
-    0 2px 6px rgba(0, 21, 64, .14),
-    0 10px 20px rgba(0, 21, 64, .05);
+  box-shadow: var(--box-shadow);
 }
 
 .phone {
@@ -665,6 +668,7 @@ code {
   margin-right: -400px;
   margin-top: 50px;
   margin-bottom: 50px;
+  box-shadow: var(--box-shadow);
 }
 
 .img-comp-img {
@@ -679,6 +683,7 @@ code {
 .img-comp-img img {
   display: block;
   vertical-align: middle;
+  width: unset;
 }
 
 .img-comp-slider {
