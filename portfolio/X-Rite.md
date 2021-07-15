@@ -164,7 +164,9 @@ function initComparisons() {
   }
 }
 
-initComparisons();
+if(document.documentElement.scrollWidth > 1000) {
+  initComparisons();
+}
 
 </script>
 

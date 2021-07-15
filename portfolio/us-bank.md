@@ -44,14 +44,12 @@ So anyway...I started blasting the CSS and rebuilt it from scratch (and throwing
   </div>
 </div>
 
-## Design System V.1.<br>or<br> One Button, Two Button, Red Button, Blue Button
+## One Button, Two Button, Red Button, Blue Button
 After rebuilding little pieces of projects with vanilla HTML, CSS and Javascript I had a nice start to a hand coded design system. We had a significant of documentation within Invision but I was able to hand off reusable and WCAG 2.1 AA compliant code (I sat right next to some very gracious native screen reader users that I love dearly) to our technology partners.
 
 There was a lot of designers, and a lot of disperate versions of elements that looked *close* but not *exact*. I worked with a lot of visual designers and user experience professionals to help them better understand the grain of the web, how inline, block, margin collapse, line height effecting the box model, and all that good stuff that caused major headaches.
 
 The culimination of the HTML can be found in places across the public marketing site, consistently sized buttons are my mark. Unfortunately the design system I worked on is lost to time, but shortly there-after the Omnichannel User Experience team launched <a href="https://shield.usbank.com/">Shield</a>, but if you ever see a CSS class that has an override and is prepended with "mr-" you know that's me!
-
-<small>Disclaimer: all images and information were pulled from public sources</small>
 
 <script>
 function initComparisons() {
@@ -131,8 +129,10 @@ function initComparisons() {
   }
 }
 
-initComparisons();
 
+if(document.documentElement.scrollWidth > 1000) {
+  initComparisons();
+}
 </script>
 
 <style>

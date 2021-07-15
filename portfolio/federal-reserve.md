@@ -89,7 +89,6 @@ We launched <a href="https://minneapolisfed.org">Minneapolisfed.org</a> eight mo
 
 But most of all, working within the Federal Reserve Bank of Minneapolis gave me a greater appreciation for public service at all levels of government. There are some extremely talented folks out there who are making sure that the government is running smoothly. It was an honor to work alongside them.
 
-<small>Disclaimer: all images and information were pulled from public sources</small>
 <script>
 function initComparisons() {
   var x, i;
@@ -168,6 +167,8 @@ function initComparisons() {
   }
 }
 
-initComparisons();
+if(document.documentElement.scrollWidth > 1000) {
+  initComparisons();
+}
 
 </script>

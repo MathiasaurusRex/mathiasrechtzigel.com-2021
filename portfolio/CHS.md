@@ -8,13 +8,13 @@ layout: layouts/post.njk
 logo: ../img/logo/chs.png
 ---
 
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+<p class="lead-p">CHS was one of my favorite clients while I was at Horizontal. Over the three years there was always an enhancement to be made, across their countless platforms. All in support of their farmer partners.</p>
 
-## Section Header
+In late 2016 all of this work culiminated in a reinvisioning of the content authoring experience and a rebranding of their main site leveraging flexible tile based components that could be reconfigured in multiple different ways. This project had a very tight turnaround to showcase the digital teams capabilities before their Annual Meeting in December of 2016.
 
-<a href="{{ '/posts/firstpost/' | url }}">First post</a>
-<a href="{{ '/posts/thirdpost/' | url }}">Third post</a>
+The concept of an tiled experience was easy to imagine but the permutations of how the components had to react across multiple breakpoints required some design strategy on my part. A tile is just a tile until you have to take into account flexible imagery, titles, and a variety of breakpoints. 
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+<a href="https://www.chsinc.com/">The foundation of this experience is still being used today.</a>
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+<img src="/img/chs/chs-tile1.png" alt="Screenshot of the tiled experience."/>
+<img src="/img/chs/chs-tile2.png" alt="Screenshot of another tiled experience.."/>

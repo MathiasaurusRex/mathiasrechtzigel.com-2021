@@ -20,6 +20,9 @@ html {
   --font-size--h5: 1.4rem;
   --font-size--p: 1.8rem;
 
+  --letter-spacing: -2px;
+  --word-spacing: -2rem;
+
 
   --space-large: var(--font-size--h1);
   --space-medium: var(--font-size--h3);
@@ -28,7 +31,12 @@ html {
   --base-max-width: 120rem;
   --grid-columns--base: repeat(6, minmax(0, 1fr));
   --grid-columns--large: repeat(8, minmax(0, 1fr));
+  --grid-columns--three--two: 1fr 1fr 1fr;
   --grid-gap--base: calc(var(--space-medium) * 2);
+
+  --grid-columns--large--centered: 2/6;
+  --grid-columns--base--centered: 3/7;
+  
 
 
   
@@ -66,6 +74,13 @@ html.darkmode {
     --font-size--h4: 1.4rem;
     --font-size--h5: 1.4rem;
     --font-size--p: 1.6rem;
+    --font-size--grande: 3.6rem;
+    --space-large: var(--font-size--h3);
+    --grid-columns--large--centered: 1/-1;
+    --grid-columns--base--centered: 1/-1;
+    --grid-columns--three--two: 1fr 1fr;
+    --letter-spacing: 0;
+    --word-spacing: 0;
   }
 }
 
@@ -75,8 +90,8 @@ html {
   font-family: var(--font-reading);
   color: var(--color-text);
   background-color: var(--color-background);
-  margin: var(--space-small);
   margin-bottom: 0;
+  width: 100vw;
 }
 
 
@@ -260,14 +275,13 @@ hr:after {
   bottom: -10px;
 }
 
-
-
 /* header */
 header {
   background-color: var(--primary);
   display: flex;
   justify-content: space-between;
   padding: var(--space-medium) 0;
+  z-index: 9999;
 }
 
 header a {
@@ -305,7 +319,7 @@ header .navigation {
   margin-bottom: var(--space-large);
 }
 .layout.layout-post .content-wrapper {
-  grid-column: 3/7 ;
+  grid-column: var(--grid-columns--base--centered) ;
 }
 
 
@@ -315,9 +329,11 @@ header .navigation {
   grid-column-gap: var(--grid-gap--base);
   grid-column: 1/-1;
 }
+
 .layout.layout-content .content-wrapper {
-  grid-column: 2/6;
+  grid-column: var(--grid-columns--large--centered);
 }
+
 
 
 
@@ -329,8 +345,8 @@ header .navigation {
   font-family: var(--font-title);
   font-size: var(--font-size--grande);
   margin-bottom: var(--space-small);
-  letter-spacing: -2px;
-  word-spacing: -2rem;
+  letter-spacing: var(--letter-spacing);
+  word-spacing: var(--word-spacing);
 }
 
 .title-banner time {
@@ -346,6 +362,41 @@ header .navigation {
   height: 10px;
   width: 100%;
   background: var(--color-gradient);
+}
+
+.layout-home {
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.layout-home .title-banner {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.layout-home .title-banner:after {
+  display: none;
+}
+
+
+
+
+.layout-home .title-banner h1 {
+  font-size: var(--font-size--h3);
+  margin-bottom: 16px;
+  letter-spacing: 0;
+  word-spacing: 0;
+  text-align: left;
+}
+
+.layout-home canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  pointer-events: none;
 }
 
 /* End Title Banner */
@@ -372,7 +423,7 @@ code {
   padding-left: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: var(--grid-columns--three--two);
   grid-gap: var(--space-large);
 
 }
@@ -380,7 +431,8 @@ code {
   padding: 3rem;
   display: grid;
   place-items: center;
-  background-color: var(--white);
+  background: var(--white);
+  box-shadow: var(--box-shadow);
 }
 
 .project-list > .project-list--item .project-list--link:after {
@@ -399,6 +451,8 @@ code {
     width: 100%;
     grid-area: 1 / 1 ;
     filter: grayscale(100%);
+    box-shadow: none;
+    margin-bottom: 0;
 }
 
 .project-list--title {
@@ -414,7 +468,37 @@ code {
   transform: translateY(var(--space-large));
 } */
 
+/* Big Badda Button */
+.button-big {
+  font-size: var(--font-size--grande);
+  font-family: var(--font-code);
+  text-transform: uppercase;
+  transform: skew(-8deg);
+  padding: 2rem;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+.button-big:after {
+  content: "";
+  background: var(--color-gradient);
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -500px;
+  z-index: -1;
+  transition: .3s all ease;
+}
+.button-big:hover:after {
+  left: 0;
+}
 
+.button-big span {
+  transform: skew(8deg);
+  display: inline-block;
+}
 /* Content Wrapper */
 
 .content-wrapper h2 {
@@ -613,6 +697,14 @@ code {
   margin-bottom: 50px;
 }
 
+@media(max-width: 1000px) {
+  .device-collection {
+    width: unset;
+    margin-left: unset;
+    margin-right: unset;
+  }
+}
+
 .device-collection::after {
   content: "";
   display: block;
@@ -660,51 +752,54 @@ code {
 
 /* End Mockup Screens */
 /* Start Image Comparison Slider */
-.img-comp-container {
-  width: calc(100% + 800px);
-  height: 1800px;
-  position: relative;
-  margin-left: -400px;
-  margin-right: -400px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  box-shadow: var(--box-shadow);
-}
 
-.img-comp-img {
-  position: absolute;
-  width: auto;
-  height: auto;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
+@media(min-width: 1000px){
+  .img-comp-container {
+    width: calc(100% + 600px);
+    height: 1800px;
+    position: relative;
+    margin-left: -300px;
+    margin-right: -300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .img-comp-img img {
+    display: block;
+    vertical-align: middle;
+    width: unset;
+  }
+  
+  .img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    /*set the appearance of the slider:*/
+    width: 100px;
+    height: 100%;
+    background-color: #2196F3;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-comp-slider:before {
+    content: "drag me";
+    display: block;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: var(--font-code);
+  }
+  /* End Image Comparison Slider */
 }
-
-.img-comp-img img {
-  display: block;
-  vertical-align: middle;
-  width: unset;
-}
-
-.img-comp-slider {
-  position: absolute;
-  z-index: 9;
-  cursor: ew-resize;
-  /*set the appearance of the slider:*/
-  width: 100px;
-  height: 100%;
-  background-color: #2196F3;
-  opacity: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.img-comp-slider:before {
-  content: "drag me";
-  display: block;
-  color: white;
-  font-size: 40px;
-  text-align: center;
-  font-family: var(--font-code);
-}
-/* End Image Comparison Slider */
