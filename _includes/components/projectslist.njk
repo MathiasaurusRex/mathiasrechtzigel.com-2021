@@ -3,7 +3,7 @@
 {% for project in projectslist | reverse %}
   <li class="project-list--item">
     <a href="{{ project.url | url }}" class="project-list--link">
-      <img src={{project.data.logo}} alt={{project.data.title}}/>
+      <img src={{project.data.logo}} alt="{{project.data.title}}"/>
     </a>
   </li>
 {% endfor %}

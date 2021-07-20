@@ -2,15 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 
 html {
-  --yellow: #FFF820;
+  --orange: #ff5722;
   --black: #27282c;
-  --white: #f5f5fb;
-  --pink: #ff00c4;
-  --teal: #00fff6;
+  --white: #ffffff;
 
   --font-title: "IBM Plex Mono", monospace;
   --font-code : var(--font-title);
   --font-reading: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  --font-size--home: 12rem;
   --font-size--grande: 9.6rem;
   --font-size--large: 7rem;
   --font-size--h1: 4.8rem;
@@ -20,9 +19,14 @@ html {
   --font-size--h5: 1.4rem;
   --font-size--p: 1.8rem;
 
-  --letter-spacing: -2px;
-  --word-spacing: -2rem;
 
+  --font-size--home: calc(3.2rem + (9 - 3.2) * ((100vw - 30rem) / (120 - 30)));
+  --letter-spacing--home: -2px;
+  --word-spacing--home: -2rem;
+
+
+  --letter-spacing: -6px;
+  --word-spacing: -3rem;
 
   --space-large: var(--font-size--h1);
   --space-medium: var(--font-size--h3);
@@ -34,17 +38,18 @@ html {
   --grid-columns--three--two: 1fr 1fr 1fr;
   --grid-gap--base: calc(var(--space-medium) * 2);
 
-  --grid-columns--large--centered: 2/6;
-  --grid-columns--base--centered: 3/7;
+  --grid-columns--large--centered: 1/-1;
+  --grid-columns--base--centered: 2/8;
   
-
-
-  
-  --color-background: var(--yellow);
+  --color-background: var(--white);
   --color-text: var(--black);
-  --color-selection: var(--teal);
+  --color-selection: var(--orange);
+/* 
+  --color-background: var(--black);
+  --color-text: var(--white);
+  --color-selection: var(--orange); */
   
-  --color-gradient: linear-gradient(12deg, var(--teal) 0%, var(--pink) 100%);
+  --color-gradient: linear-gradient(12deg, var(--orange) 0%, var(--orange) 100%);
 
   --box-shadow: inset 0 4px 7px 1px #fff,
   inset 0 -5px 20px rgba(173, 186, 204, .25),
@@ -61,9 +66,8 @@ html {
 
 html.darkmode {
   --color-background: var(--black);
-  --color-text: var(--yellow);
+  --color-text: var(--orange);
   --color-selection: var(--pink);
-  
 }
 
 @media (max-width: 1000px) {
@@ -81,9 +85,16 @@ html.darkmode {
     --grid-columns--three--two: 1fr 1fr;
     --letter-spacing: 0;
     --word-spacing: 0;
+    --letter-spacing--home: 0;
+    --word-spacing--home: 0;
   }
 }
 
+@media(max-width: 600px) {
+  html {
+    --grid-columns--three--two: 1fr;
+  }
+}
 html {
   font-size: 62.5%;
   min-height: 100%;
@@ -91,7 +102,8 @@ html {
   color: var(--color-text);
   background-color: var(--color-background);
   margin-bottom: 0;
-  width: 100vw;
+  max-width: var(--base-max-width);
+  margin: 0 auto;
 }
 
 
@@ -101,40 +113,19 @@ body {
   position: relative;
   margin: 0;
   padding-bottom: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* html:after, html:before {
-  content: "";
-  will-change: top left;
-  backface-visibility: hidden;
-  position: fixed;
-  top: 0;
-  height: 100%;
-  width: var(--space-small);
-  background: var(--color-gradient);
-  z-index: 21000;
-} */
 
-html:after {
-  right: 0;
-}
-html:before {
-  left: 0;
-}
-
-body:before,
-html:after {
-  transform: rotate(180deg);
-}
-
-body:after, body:before {
+html:after, html:before {
   content: "";
   backface-visibility: hidden;
   position: fixed;
   left: 0;
   width: 100%;
   height: var(--space-small);
-  background: var(--color-gradient);
+  background-color: var(--orange);
   z-index: 20000;
 }
 body:before {
@@ -282,6 +273,7 @@ header {
   justify-content: space-between;
   padding: var(--space-medium) 0;
   z-index: 9999;
+  position: relative;
 }
 
 header a {
@@ -290,6 +282,8 @@ header a {
   font-size: var(--font-size--h3);
   font-family: var(--font-title);
   background: none;
+  display: flex;
+  align-items: center;
 }
 
 header .navigation {
@@ -297,6 +291,16 @@ header .navigation {
   display: flex;
   padding: 0;
   margin: 0;
+}
+
+header img {
+  height: 100px;
+  position: absolute;
+  transition: .3s all ease;
+}
+
+header img:hover {
+  transform: rotate(5deg);
 }
 
 /* end header */
@@ -338,9 +342,6 @@ header .navigation {
 
 
 /* Title Banner */
-.title-banner {
-  text-align: center;
-}
 .title-banner h1 {
   font-family: var(--font-title);
   font-size: var(--font-size--grande);
@@ -361,7 +362,7 @@ header .navigation {
   display: block;
   height: 10px;
   width: 100%;
-  background: var(--color-gradient);
+  background: var(--orange);
 }
 
 .layout-home {
@@ -370,11 +371,14 @@ header .navigation {
   margin-bottom: 0;
 }
 
-.layout-home .title-banner {
-  text-align: left;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+@media(max-width: 1000px) {
+  .layout-home,
+  .layout-home .title-banner {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
 }
+
 
 .layout-home .title-banner:after {
   display: none;
@@ -384,11 +388,17 @@ header .navigation {
 
 
 .layout-home .title-banner h1 {
-  font-size: var(--font-size--h3);
-  margin-bottom: 16px;
-  letter-spacing: 0;
-  word-spacing: 0;
+  font-size: var(--font-size--home);
+  margin-top: 5rem;
+  letter-spacing: var(--letter-spacing--home);
+  word-spacing: var(--word-spacing--home);
+  line-height: 1;
   text-align: left;
+}
+@media(max-width: 1000px) {
+  .layout-home .title-banner h1 {
+    margin-top: 0rem;
+  }
 }
 
 .layout-home canvas {
@@ -428,10 +438,14 @@ code {
 
 }
 .project-list > .project-list--item .project-list--link {
-  padding: 3rem;
+  padding: var(--space-medium);
   display: grid;
   place-items: center;
   background: var(--white);
+  border-radius: 25px;
+}
+
+.project-list > .project-list--item .project-list--link:hover {
   box-shadow: var(--box-shadow);
 }
 
@@ -444,6 +458,12 @@ code {
   display: block;
   padding-bottom: 100%;
   grid-area: 1 / 1 ;
+}
+
+@media(max-width: 600px) {
+  .project-list > .project-list--item .project-list--link:before {
+    padding-bottom: 50%;
+  }
 }
 
 .project-list > .project-list--item .project-list--link img,
@@ -511,6 +531,20 @@ code {
   box-shadow: var(--box-shadow);
 }
 
+/* Screen Reader */
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+	-webkit-clip-path: inset(50%) !important;
+		clip-path: inset(50%) !important;  /* 2 */
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;            /* 3 */
+}
 
 /* Mockup Screens */
 .device {
@@ -703,6 +737,9 @@ code {
     margin-left: unset;
     margin-right: unset;
   }
+  canvas {
+    display: none;
+  }
 }
 
 .device-collection::after {
@@ -787,16 +824,18 @@ code {
     /*set the appearance of the slider:*/
     width: 100px;
     height: 100%;
-    background-color: #2196F3;
+    background-color: white;
+    color: var(--color-text);
     opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: var(--box-shadow);
   }
   .img-comp-slider:before {
     content: "drag me";
     display: block;
-    color: white;
+    color: var(--color-text);
     font-size: 40px;
     text-align: center;
     font-family: var(--font-code);
