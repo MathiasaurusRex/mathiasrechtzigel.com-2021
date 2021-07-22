@@ -86,7 +86,7 @@ html.darkmode {
     --letter-spacing: 0;
     --word-spacing: 0;
     --letter-spacing--home: 0;
-    --word-spacing--home: 0;
+    --word-spacing--home: -1rem;
   }
 }
 
@@ -348,6 +348,7 @@ header img:hover {
   margin-bottom: var(--space-small);
   letter-spacing: var(--letter-spacing);
   word-spacing: var(--word-spacing);
+  margin-top: var(--space-large);
 }
 
 .title-banner time {
@@ -366,47 +367,28 @@ header img:hover {
 }
 
 .layout-home {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   margin-top: 0;
   margin-bottom: 0;
 }
-
-@media(max-width: 1000px) {
-  .layout-home,
-  .layout-home .title-banner {
-    grid-template-columns: 1fr;
-    margin-top: 30px;
-  }
-}
-
 
 .layout-home .title-banner:after {
   display: none;
 }
 
 
-
-
 .layout-home .title-banner h1 {
-  font-size: var(--font-size--home);
-  margin-top: 5rem;
+  font-size: clamp(2rem, 10vw, 12rem);
   letter-spacing: var(--letter-spacing--home);
   word-spacing: var(--word-spacing--home);
   line-height: 1;
   text-align: left;
 }
-@media(max-width: 1000px) {
-  .layout-home .title-banner h1 {
-    margin-top: 0rem;
-  }
-}
 
-.layout-home canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  pointer-events: none;
+@media(max-width: 500px) {
+  .layout-home .title-banner h1 {
+    font-size: clamp(2rem, 9vw, 12rem);
+  }
 }
 
 /* End Title Banner */
@@ -520,10 +502,6 @@ code {
   display: inline-block;
 }
 /* Content Wrapper */
-
-.content-wrapper h2 {
-  margin-top: 150px;
-}
 
 .content-wrapper img {
   width: 100%;

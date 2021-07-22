@@ -8,7 +8,7 @@ layout: layouts/post.njk
 logo: ../img/logo/united-health.png
 ---
 
-<p class="lead-p">United Healthcare partned with Pixelfarm to build out an interactive game center for their users. They needed the games to meet or exceed the guidelines set forth by the Web Content Accessibility Guidelines(WCAG) so that they could adhere to the American's with Disabilities Act. <br><br>So I built out some amazing, accessible, and responsive web games. How cool is that?</p>
+<p class="lead-p">United Healthcare partnered with Pixelfarm to build out an interactive game center for their users. They needed the games to meet or exceed the guidelines set forth by the Web Content Accessibility Guidelines(WCAG) so that they could adhere to the American's with Disabilities Act. <br><br>So I built out some amazing, accessible, and responsive web games. How cool is that?</p>
 
 ## Game Center
 The hub of all the games needed to showcase everything that United Healthcare could offer. All of the games were reviewed and were tagged with appropriate considerations. Some games has special considerations for screen reader support, keyboard-only play, difficulty selection, and vertical only support. This allowed folks who might have cognitive, visual, and motor impairments to better control how they would like to play.
@@ -18,9 +18,9 @@ In total we had six games: Memory Recall, Word Scramble, Shuffle Club (a Breakou
 <img src="/img/uhc/gc-main.png" alt="Screenshot of the Game Center's main screen that highlights six web games."/>
 <img src="/img/uhc/gc-a11y.png" alt="Screenshot of the Game Center's accessibility dropdown that showcases checkboxes to filter games based on screen reader support, keyboard-only play, difficulty selection, and vertical only mobile support."/>
 
-## Memmory Recall
+## Memory Recall
 
-Building a memory recall game to meet WCAG is a tricky proposition because most screenreaders allow you to replay the content that is read allowed to you. 
+Building a memory recall game to meet WCAG is a tricky proposition because most screen readers allow you to replay the content that is read to you. 
 
 The first iteration was using an aria-live region and having the cards announce their numbers on animation. Unfortunately after some play testing with users we discovered that most of them would replay the sequence and quickly type it in.
 
@@ -44,9 +44,9 @@ So we purposely decided to *degrade* the experience so that they had the same ga
 
 ## Trivia Casino
 
-Building a fully accessible triva game is a tad bit easier. We were still using custom audio cues for aesthetic reasons but the main accessibility challenge here was that the original version was timed. 
+Building a fully accessible trivia game is a tad bit easier. We were still using custom audio cues for aesthetic reasons but the main accessibility challenge here was that the original version was timed. 
 
-A timed game makes it challenging for folks who might have congitive disabilities to play the game to their full enjoyment. After some conversations it was decided that while a "timed" version might be more challenging, it didn't actually add anything to the game. 
+A timed game makes it challenging for folks who might have cognitive disabilities to play the game to their full enjoyment. After some conversations it was decided that while a "timed" version might be more challenging, it didn't actually add anything to the game. 
 
 <div class='device-collection'>
   <div class='phone-container'>

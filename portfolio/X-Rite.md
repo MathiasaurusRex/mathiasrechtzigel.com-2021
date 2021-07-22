@@ -8,7 +8,7 @@ layout: layouts/post.njk
 logo: ../img/logo/xrite.png
 ---
 
-<p class="lead-p">X-Rite was the first project where I had a major hand in the strategic direction of the design and technical implementation. Not only did we establish a design system that was flexible to the international content needs of the premier supplier of color calibration technology in the world, I ensured that the system would be able to adapt to the needs of Pantones color of the year marketing push. </p>
+<p class="lead-p">X-Rite was the first project where I had a major hand in the strategic direction of the design and technical implementation. Not only did we establish a design system that was flexible to the international content needs of the premier supplier of color calibration technology in the world, I ensured that the system would be able to adapt to the needs of Pantone's color of the year marketing push. </p>
 
 
 
@@ -56,7 +56,7 @@ From the start, we knew that we wanted to create a system that was simple enough
 
 
 ## Internationalization
-Managing personalized content within Sitecore is a breeze, which made it the perfect solution to manage X-Rite's fourteen language Global Gateway.
+Managing personalized content within Sitecore is a breeze, which makes it the perfect solution to manage X-Rite's fourteen language Global Gateway.
 
 X-Rite is a global leader of color calibrators. If you're say... Coca-cola... you want to ensure that every single bottle and can you produce is Coca-cola red. You've invested billions of dollars into your brand and you don't want that spoiled because the ambient temperature in a location causes one of the dyes to be a tad bit lighter. 
 
@@ -79,7 +79,7 @@ We leveraged Sitecore's internationalization engine to ensure that all of the Gl
 ## Building interactive experiences that drive traffic.
 In order to drive traffic to the site, we built a responsive Color Challenge and Hue Test. One in 255 women and One in 12 men have some form of color vision deficiency. This interactive page served as an educational item that professionals who work with color could take to prove their mettle. 
 
-And they could send it to their bosses, friends, and colleagues. If those folks didn't do so hot, maybe your monitor isn't ccalibrated correctly and you can purchase a <a href="https://www.xrite.com/categories/calibration-profiling/i1display-pro">i1 Display Pro</a> which is the perfect combination of unrivaled color precision, speed and controls for the highest level of on-screen color accuracy.
+And they could send it to their bosses, friends, and colleagues. If those folks didn't do so hot, maybe your monitor isn't calibrated correctly and you can purchase a <a href="https://www.xrite.com/categories/calibration-profiling/i1display-pro">i1 Display Pro</a> which is the perfect combination of unrivaled color precision, speed and controls for the highest level of on-screen color accuracy.
 
 As of July 2021 this simple page has had over 378,000 shares.
 
