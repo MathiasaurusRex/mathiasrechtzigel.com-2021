@@ -1,0 +1,28 @@
+<div class="darkmode-background"></div>
+<div class="darkmode-layer darkmode-layer--button"></div>
+<button class="darkmode-toggle" onclick="updateColorScheme()">🌓</button>
+
+
+<script>
+    // False is "turned off"
+    // This could be light mode if prefers light mode
+    // This could be dark mode if prefers dark mode
+    
+    let colorSchemeStorage = localStorage.getItem('colorScheme');
+    let colorScheme = colorSchemeStorage;
+
+    function updateColorScheme() {
+        colorScheme = !colorScheme                                             
+        document.getElementsByClassName("darkmode-layer")[0].classList.toggle("darkmode-layer--expanded");
+        localStorage.setItem('colorScheme', colorScheme);
+    }
+
+    if(colorScheme === "true") {
+        document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--expanded");
+        document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--no-transition");
+        setTimeout(function(){
+            document.getElementsByClassName("darkmode-layer")[0].classList.remove("darkmode-layer--no-transition");
+        }, 100);  
+    }
+
+</script>

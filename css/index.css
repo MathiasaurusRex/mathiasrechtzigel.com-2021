@@ -3,6 +3,7 @@
 
 html {
   --orange: #ff5722;
+  --orange--inverted: #009ecb;
   --black: #27282c;
   --white: #ffffff;
 
@@ -19,11 +20,9 @@ html {
   --font-size--h5: 1.4rem;
   --font-size--p: 1.8rem;
 
-
   --font-size--home: calc(3.2rem + (9 - 3.2) * ((100vw - 30rem) / (120 - 30)));
   --letter-spacing--home: -2px;
   --word-spacing--home: -2rem;
-
 
   --letter-spacing: -6px;
   --word-spacing: -3rem;
@@ -44,10 +43,6 @@ html {
   --color-background: var(--white);
   --color-text: var(--black);
   --color-selection: var(--orange);
-/* 
-  --color-background: var(--black);
-  --color-text: var(--white);
-  --color-selection: var(--orange); */
   
   --color-gradient: linear-gradient(12deg, var(--orange) 0%, var(--orange) 100%);
 
@@ -56,19 +51,22 @@ html {
   0 2px 6px rgba(0, 21, 64, .14),
   0 10px 20px rgba(0, 21, 64, .05);
 
-
-/* 
-  --base-max-width: 100rem;
-  --base-grid-columns: repeat(6, minmax(0, 1fr));
-  --large-grid-columns: repeat(8, minmax(0, 1fr));
-  --base-grid-gap: var(--font-size--h3); */
 }
 
 html.darkmode {
   --color-background: var(--black);
-  --color-text: var(--orange);
-  --color-selection: var(--pink);
+  --color-text: var(--white);
+  --color-selection: var(--orange);
 }
+
+@media (prefers-color-scheme: dark) {
+  html.color-scheme {
+    --color-background: var(--white);
+    --color-text: var(--black);
+    --color-selection: var(--orange);
+  }
+}
+
 
 @media (max-width: 1000px) {
   html {
@@ -102,12 +100,9 @@ html {
   color: var(--color-text);
   background-color: var(--color-background);
   margin-bottom: 0;
-  max-width: var(--base-max-width);
-  margin: 0 auto;
 }
 
-
-body {
+.body-wrapper {
   background: var(--bg);
   min-height: calc(100vh - var(--space-large));
   position: relative;
@@ -117,25 +112,45 @@ body {
   margin: 0 auto;
 }
 
+a[href]:not([tabindex='-1']),
+area[href]:not([tabindex='-1']),
+input:not([disabled]):not([tabindex='-1']),
+select:not([disabled]):not([tabindex='-1']),
+textarea:not([disabled]):not([tabindex='-1']),
+button:not([disabled]):not([tabindex='-1']),
+iframe:not([tabindex='-1']),
+[tabindex]:not([tabindex='-1']),
+[contentEditable=true]:not([tabindex='-1'])
+{
+    outline: 2px dashed transparent;
+}
 
-html:after, html:before {
-  content: "";
-  backface-visibility: hidden;
-  position: fixed;
-  left: 0;
-  width: 100%;
-  height: var(--space-small);
-  background-color: var(--orange);
-  z-index: 20000;
+a[href]:not([tabindex='-1']):focus,
+area[href]:not([tabindex='-1']):focus,
+input:not([disabled]):not([tabindex='-1']):focus,
+select:not([disabled]):not([tabindex='-1']):focus,
+textarea:not([disabled]):not([tabindex='-1']):focus,
+button:not([disabled]):not([tabindex='-1']):focus,
+iframe:not([tabindex='-1']):focus,
+[tabindex]:not([tabindex='-1']):focus,
+[contentEditable=true]:not([tabindex='-1']):focus
+{
+    outline: 2px dashed var(--orange);
 }
-body:before {
-  top: 0;
+
+a[href]:not([tabindex='-1']):focus:active,
+area[href]:not([tabindex='-1']):focus:active,
+input:not([disabled]):not([tabindex='-1']):focus:active,
+select:not([disabled]):not([tabindex='-1']):focus:active,
+textarea:not([disabled]):not([tabindex='-1']):focus:active,
+button:not([disabled]):not([tabindex='-1']):focus:active,
+iframe:not([tabindex='-1']):focus:active,
+[tabindex]:not([tabindex='-1']):focus:active,
+[contentEditable=true]:not([tabindex='-1']):focus:active
+{
+    outline: 2px dashed transparent;
 }
-body:after {
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-}
+
 
 h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
   font-family: var(--font-title);
@@ -188,9 +203,11 @@ a:visited {
   text-decoration: none;
   transition: .3s all ease;
   font-weight: bold;
+  border: 2px solid transparent;
 }
 a:hover {
   text-shadow: 0px 0px 10px white;
+  border: 2px solid var(--orange);
 }
 a {
   text-decoration: none;
@@ -272,7 +289,6 @@ header {
   display: flex;
   justify-content: space-between;
   padding: var(--space-medium) 0;
-  z-index: 9999;
   position: relative;
 }
 
@@ -337,9 +353,6 @@ header img:hover {
 .layout.layout-content .content-wrapper {
   grid-column: var(--grid-columns--large--centered);
 }
-
-
-
 
 /* Title Banner */
 .title-banner h1 {
@@ -423,12 +436,13 @@ code {
   padding: var(--space-medium);
   display: grid;
   place-items: center;
-  background: var(--white);
+  background: transparent;
   border-radius: 25px;
+  border: 2px solid transparent;
 }
 
 .project-list > .project-list--item .project-list--link:hover {
-  box-shadow: var(--box-shadow);
+  border: 2px solid var(--orange);
 }
 
 .project-list > .project-list--item .project-list--link:after {
@@ -448,8 +462,7 @@ code {
   }
 }
 
-.project-list > .project-list--item .project-list--link img,
-.project-list > .project-list--item .project-list--link svg {
+.project-list > .project-list--item .project-list--link img {
     width: 100%;
     grid-area: 1 / 1 ;
     filter: grayscale(100%);
@@ -457,51 +470,22 @@ code {
     margin-bottom: 0;
 }
 
+.darkmode .project-list > .project-list--item .project-list--link img {
+  filter: grayscale(100%) invert();
+}
+
+
 .project-list--title {
   font-family: var(--font-code);
   line-height: 1.4;
   text-align: center;
   margin-top: var(--space-small);
 }
-/* .project-list--item:nth-child(odd) {
-  transform: translateY(calc(-1 * var(--space-large)));
-}
-.project-list--item:nth-child(even) {
-  transform: translateY(var(--space-large));
-} */
 
-/* Big Badda Button */
-.button-big {
-  font-size: var(--font-size--grande);
-  font-family: var(--font-code);
-  text-transform: uppercase;
-  transform: skew(-8deg);
-  padding: 2rem;
-  display: inline-block;
-  overflow: hidden;
-  background: none;
-}
-.button-big:after {
-  content: "";
-  background: var(--color-gradient);
-  height: 100%;
-  width: 100%;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -500px;
-  z-index: -1;
-  transition: .3s all ease;
-}
-.button-big:hover:after {
-  left: 0;
-}
-
-.button-big span {
-  transform: skew(8deg);
-  display: inline-block;
-}
 /* Content Wrapper */
+.content-wrapper a {
+  border: none;
+}
 
 .content-wrapper img {
   width: 100%;
@@ -707,6 +691,7 @@ code {
   margin-right: -200px;
   margin-top: 50px;
   margin-bottom: 50px;
+  z-index: 1;
 }
 
 @media(max-width: 1000px) {
@@ -810,6 +795,7 @@ code {
     justify-content: center;
     box-shadow: var(--box-shadow);
   }
+
   .img-comp-slider:before {
     content: "drag me";
     display: block;
@@ -819,4 +805,94 @@ code {
     font-family: var(--font-code);
   }
   /* End Image Comparison Slider */
-}
+
+  /* Start Darkmode */
+  .darkmode-layer {
+    position: fixed;
+    pointer-events: none;
+    background: #fff;
+    transition: all 0.3s ease;
+    mix-blend-mode: difference;
+  }
+
+  .darkmode-layer--button {
+    width: var(--space-large);
+    height: var(--space-large);
+    border-radius: 50%;
+    left: var(--space-medium);
+    bottom: var(--space-medium);
+  }
+
+  .darkmode-layer--simple {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(1) !important;
+  }
+
+  .darkmode-layer--expanded {
+    transform: scale(100);  
+    border-radius: 0;
+  }
+
+  .darkmode-layer--no-transition {
+    transition: none;
+  }
+
+  .darkmode-toggle {
+    background: #100f2c;
+    width: var(--space-large);
+    height: var(--space-large);
+    position: fixed;
+    border-radius: 50%;
+    left: var(--space-medium);
+    bottom: var(--space-medium);
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+  }
+
+  .darkmode-background {
+    background: #fff;
+    border-top: 10px solid var(--orange);
+    position: fixed;
+    pointer-events: none;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(#cdcdcd 4%, transparent 4%),
+  radial-gradient(#cdcdcd 4%, transparent 4%);
+    background-position: 0 0, 8px 8px;
+    background-size: 16px 16px;
+  }
+
+  img, .darkmode-ignore {
+    isolation: isolate!important;
+    display: inline-block;
+  }
+
+  .darkmode-layer--expanded + .darkmode-toggle {
+    background-color: white;
+  }
+
+  .darkmode-layer--expanded + .darkmode-toggle:focus,
+  .darkmode-layer--expanded + .darkmode-toggle:hover {
+    outline: 2px dashed var(--orange--inverted)!important;
+  }
+
+  
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .darkmode-toggle {display: none !important}
+  }
+
+  @supports (-ms-ime-align:auto), (-ms-accelerator:true) {
+    .darkmode-toggle {display: none !important}
+  }
+
+  /* End Darkmode Button */

@@ -37,10 +37,10 @@ So anyway...I started blasting the CSS and rebuilt it from scratch (and throwing
 
 <div class="img-comp-container">
   <div class="img-comp-img">
-    <img src="/img/usbank/usb-newolb.png">
+    <img src="/img/usbank/usb-newolb.png" alt="U.S. Bank's Online Banking circa 2018">
   </div>
   <div class="img-comp-img img-comp-overlay">
-     <img src="/img/usbank/usb-oldolb.png">
+     <img src="/img/usbank/usb-oldolb.png" alt="U.S. Bank's Online Banking before 2018">
   </div>
 </div>
 

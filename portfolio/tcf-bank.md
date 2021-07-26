@@ -1,6 +1,6 @@
 ---
 title: TCF Bank
-description: This is a post on My Blog about leveraging agile frameworks.
+description: In 2015, Mathias Rechtzigel built and integrated the Front End of TCFBank.com and designed amazing hotfixes that reduced call volume almost immediately.
 date: 2015-06-07
 tags:
   - Public Website

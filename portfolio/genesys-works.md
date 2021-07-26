@@ -1,6 +1,6 @@
 ---
 title: Genesys Works
-description: This is a post on My Blog about leveraging agile frameworks.
+description: In 2017, Mathias Rechtzigel worked for Genesys Works, a non-profit focused on giving young professionals the skills to thrive in the workforce of tomorrow.
 date: 2017-06-08
 tags:
   - Public Website

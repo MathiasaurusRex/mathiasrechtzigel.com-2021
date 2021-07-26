@@ -15,16 +15,16 @@ logo: ../img/logo/xrite.png
 <div class='device-collection'>
   <div class='phone-container'>
     <div class='device phone'>
-      <img src="/img/xrite/purple-small.png">
+      <img src="/img/xrite/purple-small.png" alt="X-Rite's purple theme on mobile">
     </div>
   </div>
   <div class='tablet-container'>
     <div class='device tablet'>
-      <img src='/img/xrite/purple-medium.png'>
+      <img src='/img/xrite/purple-medium.png' alt="X-Rite's purple theme on tablet">
     </div>
   </div>
   <div class='device desktop'>
-    <img src='/img/xrite/purple-large.png'>
+    <img src='/img/xrite/purple-large.png' alt="X-Rite's purple theme on desktop">
   </div>
 </div>
 
@@ -40,16 +40,16 @@ From the start, we knew that we wanted to create a system that was simple enough
 <div class='device-collection'>
   <div class='phone-container'>
     <div class='device phone'>
-      <img src="/img/xrite/green-small.png">
+      <img src="/img/xrite/green-small.png" alt="X-Rite's green theme on mobile">
     </div>
   </div>
   <div class='tablet-container'>
     <div class='device tablet'>
-      <img src='/img/xrite/green-medium.png'>
+      <img src='/img/xrite/green-medium.png' alt="X-Rite's green theme on tablet">
     </div>
   </div>
   <div class='device desktop'>
-    <img src='/img/xrite/green-large.png'>
+    <img src='/img/xrite/green-large.png' alt="X-Rite's green theme on desktop">
   </div>
 </div>
 
@@ -173,7 +173,6 @@ if(document.documentElement.scrollWidth > 1000) {
 
 <style>
   .img-comp-container {
-
     height: 600px;
-}
+  }
 </style>

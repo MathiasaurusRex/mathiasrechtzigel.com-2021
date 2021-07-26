@@ -1,6 +1,6 @@
 ---
 title: Federal Reserve Bank of Minneapolis
-description: This is a post on My Blog about leveraging agile frameworks.
+description: From 2019 to 2021 Mathias Rechtzigel worked at the Federal Reserve Bank of Minneapolis and built internal and external websites and applications.
 date: 2020-07-04
 tags:
   - Public Website
@@ -26,16 +26,16 @@ To support this mission, the Public Affairs team needed a technical and design s
 <div class='device-collection'>
   <div class='phone-container'>
     <div class='device phone'>
-      <img src="/img/minneapolisfed/article-small.png">
+      <img src="/img/minneapolisfed/article-small.png" alt="Article template on Mobile">
     </div>
   </div>
   <div class='tablet-container'>
     <div class='device tablet'>
-      <img src='/img/minneapolisfed/article-medium.png'>
+      <img src='/img/minneapolisfed/article-medium.png'  alt="Article page on medium">
     </div>
   </div>
   <div class='device desktop'>
-    <img src='/img/minneapolisfed/article-large.png'>
+    <img src='/img/minneapolisfed/article-large.png'  alt="Article page on desktop">
   </div>
 </div>
 
@@ -46,23 +46,21 @@ You have been there. Someone says that you need to change some spacing on the "C
 
 A couple of weeks later the Creative Director adds a comment to the ticket: "Not seeing this updated. Let me know if you need any help."
 
-Oh no. So much time has passed since the developer has made the change that they can't quite remember <i>what</i> they changed, and now they have to make another change. 
+Oh no. So much time has passed since the developer has made the change that they can't quite remember <i>what</i> they changed, and now they have to make another change.
 
-<div style="text-align: center;"><strong>Now you've created some visual tech debt.</strong></div>
-
-<div style="font-size: 100px; text-align: center;">🎉🥳🎉</div>
+All design debt is technical debt and it's important to manage it upfront then letting changes cascade into the future where the easiest way to fix the issue would be to start from scratch. 
 
 <strong>How can we fix this?</strong> During my time at the Federal Reserve Bank of Minneapolis I created a couple of tools to help reduce this spin. Instead of having our wireframes as pdf's on the server, the names of the components in the design system, and the back end code naming their components in different ways I created a tool based on <a href="https://meyerweb.com/eric/thoughts/2017/11/27/generating-wireframe-boxes-with-css-and-html5/">Eric Meyer's Generating Wireframe Boxes with CSS and HTML5</a> that allowed each and every component we created to have a consistent nomenclature across multiple projects and code repositories. 
 
-<p class="lead-p">In short... I baked the wireframes INTO the website, and with a couple lines of CSS and Javascript, anyone could toggle "Wireframe Mode", eliminate spin, and start speaking the same language.</p>
+<p class="lead-p">In short... I baked the wireframes INTO the website, and with a couple lines of CSS and Javascript, anyone could toggle "Wireframe Mode", eliminate spin, and start speaking the same language. Designers could more easily communicate with back end developers and it reduced gaps between teams.</p>
 
 
 <div class="img-comp-container">
   <div class="img-comp-img">
-    <img src="/img/minneapolisfed/wireframe-off.png">
+    <img src="/img/minneapolisfed/wireframe-off.png" alt="Example of Minneapolisfed.org with the wireframe mode turned on.">
   </div>
   <div class="img-comp-img img-comp-overlay">
-     <img src="/img/minneapolisfed/wireframe-on.png">
+     <img src="/img/minneapolisfed/wireframe-on.png" alt="The same example of Minneapolisfed.org with the wireframe mode turned off." >
   </div>
 </div>
 

@@ -1,6 +1,6 @@
 ---
 title: GameMill
-description: This is a post on My Blog about leveraging agile frameworks.
+description: In early 2019 Mathias Rechtzigel worked alongside James Christenson to redesign Game Mill's public facing website in time for American Ninja Warrior's release.
 date: 2019-07-01
 tags:
   - Public Website

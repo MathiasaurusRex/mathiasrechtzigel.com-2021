@@ -14,14 +14,16 @@
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
   </head>
   <body>
-    {% include "components/header.njk" %}
+    <div class="body-wrapper">
+      {% include "components/header.njk" %}
 
-    <main{% if templateClass %} class="layout {{ templateClass }}"{% endif %}>
-        {{ content | safe }}
-    </main>
+      <main{% if templateClass %} class="layout {{ templateClass }}"{% endif %}>
+          {{ content | safe }}
+      </main>
 
-    <footer></footer>
-
+      <footer></footer>
+    </div>
+    {% include "components/dark-mode-button.njk" %}
     <!-- Current page: {{ page.url | url }} -->
   </body>
 </html>

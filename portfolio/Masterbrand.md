@@ -1,6 +1,6 @@
 ---
 title: Masterbrand
-description: This is a post on My Blog about leveraging agile frameworks.
+description: In 2014, Mathias Rechtzigel built out the reponsive retrofit for Masterbrand and 7 other subsidiaries
 date: 2015-01-01
 tags:
   - Public Website
@@ -16,16 +16,16 @@ Masterbrand is the parent brand of a family of semi custom kitchen cabinetry. Wi
 <div class='device-collection'>
   <div class='phone-container'>
     <div class='device phone'>
-      <img src="/img/masterbrand/masterbrand-mobile.png">
+      <img src="/img/masterbrand/masterbrand-mobile.png" alt="Masterbrand's website on mobile">
     </div>
   </div>
   <div class='tablet-container'>
     <div class='device tablet'>
-      <img src='/img/masterbrand/masterbrand-tablet.png'>
+      <img src='/img/masterbrand/masterbrand-tablet.png' alt="Masterbrand's website on tablet">
     </div>
   </div>
   <div class='device desktop'>
-    <img src='/img/masterbrand/masterbrand-desktop.png'>
+    <img src='/img/masterbrand/masterbrand-desktop.png' alt="Masterbrand's website on desktop.">
   </div>
 </div>
 
@@ -66,16 +66,16 @@ With seven other themes to rebrand in similiar ways we got to work stripping out
 <div class='device-collection'>
   <div class='phone-container'>
     <div class='device phone'>
-      <img src="/img/masterbrand/aristokraft-mobile.png">
+      <img src="/img/masterbrand/aristokraft-mobile.png" alt="aristokraft's website on mobile">
     </div>
   </div>
   <div class='tablet-container'>
     <div class='device tablet'>
-      <img src='/img/masterbrand/aristokraft-tablet.png'>
+      <img src='/img/masterbrand/aristokraft-tablet.png' alt="aristokraft's website on tablet">
     </div>
   </div>
   <div class='device desktop'>
-    <img src='/img/masterbrand/aristokraft-desktop.png'>
+    <img src='/img/masterbrand/aristokraft-desktop.png' alt="aristokraft's website on desktop">
   </div>
 </div>
 

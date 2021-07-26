@@ -1,6 +1,6 @@
 ---
 title: Best Buy
-description: This is a post on My Blog about leveraging agile frameworks.
+description: From 2012 to 2014, Mathias Rechtzigel developed components for deals.bestbuy.com and supporting properties.
 date: 2012-01-01
 tags:
   - Public Website
