@@ -4,25 +4,57 @@
 
 
 <script>
-    // False is "turned off"
-    // This could be light mode if prefers light mode
-    // This could be dark mode if prefers dark mode
-    
-    let colorSchemeStorage = localStorage.getItem('colorScheme');
-    let colorScheme = colorSchemeStorage;
+    // True is "dark mode"
+    let colorScheme = localStorage.getItem('colorScheme');
 
-    function updateColorScheme() {
-        colorScheme = !colorScheme                                             
+    function updateColorScheme() {                     
         document.getElementsByClassName("darkmode-layer")[0].classList.toggle("darkmode-layer--expanded");
-        localStorage.setItem('colorScheme', colorScheme);
+        if(colorScheme === "true") {
+            localStorage.setItem('colorScheme', "false");
+            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ff5722');
+        }
+        else if(colorScheme === "false") { 
+            localStorage.setItem('colorScheme', "true");
+            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#009ecb');
+        }
+        colorScheme = localStorage.getItem('colorScheme');        
     }
 
-    if(colorScheme === "true") {
-        document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--expanded");
-        document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--no-transition");
-        setTimeout(function(){
+    function checkThemeOnLoad(){
+        if(colorScheme === "true") {
+            document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--expanded");
+            document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--no-transition");
+            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#009ecb');
+            setTimeout(function(){
+                document.getElementsByClassName("darkmode-layer")[0].classList.remove("darkmode-layer--no-transition");
+            }, 100);  
+        }
+        else {
+            localStorage.setItem('colorScheme', "false");
+        }
+    }
+    checkThemeOnLoad();
+
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        if(colorScheme === "true") {
+            document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--expanded");
+            document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--no-transition");
+            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#009ecb');
+            setTimeout(function(){
+                document.getElementsByClassName("darkmode-layer")[0].classList.remove("darkmode-layer--no-transition");
+            }, 100);  
+        }
+        else if (colorScheme === "false") { 
+            document.getElementsByClassName("darkmode-layer")[0].classList.remove("darkmode-layer--expanded");
             document.getElementsByClassName("darkmode-layer")[0].classList.remove("darkmode-layer--no-transition");
-        }, 100);  
+            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ff5722');
+            setTimeout(function(){
+                document.getElementsByClassName("darkmode-layer")[0].classList.remove("darkmode-layer--no-transition");
+            }, 100);  
+        }
+        else {
+            localStorage.setItem('colorScheme', "true");
+        }
     }
 
 </script>

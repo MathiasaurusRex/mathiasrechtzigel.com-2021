@@ -101,6 +101,10 @@ html {
   background-color: var(--color-background);
   margin-bottom: 0;
 }
+body {
+  border-top: 10px solid var(--orange);
+  margin: 0;
+}
 
 .body-wrapper {
   background: var(--bg);
@@ -468,6 +472,7 @@ code {
     filter: grayscale(100%);
     box-shadow: none;
     margin-bottom: 0;
+    z-index: 0;
 }
 
 .darkmode .project-list > .project-list--item .project-list--link img {
@@ -491,6 +496,8 @@ code {
   width: 100%;
   margin-bottom: 20px;
   box-shadow: var(--box-shadow);
+  z-index: 100;
+  position: relative;
 }
 
 /* Screen Reader */
@@ -804,6 +811,7 @@ code {
     text-align: center;
     font-family: var(--font-code);
   }
+}
   /* End Image Comparison Slider */
 
   /* Start Darkmode */
@@ -816,8 +824,8 @@ code {
   }
 
   .darkmode-layer--button {
-    width: var(--space-large);
-    height: var(--space-large);
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     left: var(--space-medium);
     bottom: var(--space-medium);
@@ -842,8 +850,8 @@ code {
 
   .darkmode-toggle {
     background: #100f2c;
-    width: var(--space-large);
-    height: var(--space-large);
+    width: 4rem;
+    height: 4rem;
     position: fixed;
     border-radius: 50%;
     left: var(--space-medium);
@@ -854,11 +862,11 @@ code {
     justify-content: center;
     align-items: center;
     border: 0;
+    z-index: 999;
   }
 
   .darkmode-background {
     background: #fff;
-    border-top: 10px solid var(--orange);
     position: fixed;
     pointer-events: none;
     z-index: -10;
@@ -866,8 +874,8 @@ code {
     height: 100%;
     top: 0;
     left: 0;
-    background-image: radial-gradient(#cdcdcd 4%, transparent 4%),
-  radial-gradient(#cdcdcd 4%, transparent 4%);
+    background-image: radial-gradient(#cdcdcd 7%, transparent 7%),
+  radial-gradient(#cdcdcd 7%, transparent 7%);
     background-position: 0 0, 8px 8px;
     background-size: 16px 16px;
   }
@@ -885,7 +893,6 @@ code {
   .darkmode-layer--expanded + .darkmode-toggle:hover {
     outline: 2px dashed var(--orange--inverted)!important;
   }
-
   
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .darkmode-toggle {display: none !important}
