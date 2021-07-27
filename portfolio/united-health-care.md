@@ -6,6 +6,7 @@ tags:
   - Public Website
 layout: layouts/post.njk
 logo: ../img/logo/united-health.png
+templateClass: layout-post layout-post-portfolio
 ---
 
 <p class="lead-p">United Healthcare partnered with Pixelfarm to build out an interactive game center for their users. They needed the games to meet or exceed the guidelines set forth by the Web Content Accessibility Guidelines(WCAG) so that they could adhere to the American's with Disabilities Act. <br><br>So I built out some amazing, accessible, and responsive web games. How cool is that?</p>

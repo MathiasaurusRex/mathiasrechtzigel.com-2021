@@ -1,6 +1,6 @@
 <div class="darkmode-background"></div>
 <div class="darkmode-layer darkmode-layer--button"></div>
-<button class="darkmode-toggle" onclick="updateColorScheme()">🌓</button>
+<button class="darkmode-toggle" onclick="updateColorScheme()">🌓<span class="sr-only">Toggle Color Scheme</span></button>
 
 
 <script>
@@ -21,40 +21,52 @@
     }
 
     function checkThemeOnLoad(){
-        if(colorScheme === "true") {
-            document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--expanded");
-            document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--no-transition");
-            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#009ecb');
-            setTimeout(function(){
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            if(colorScheme === "true") {
+                document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--expanded");
+                document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--no-transition");
+                document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#009ecb');
+                setTimeout(function(){
+                    document.getElementsByClassName("darkmode-layer")[0].classList.remove("darkmode-layer--no-transition");
+                }, 100);  
+            }
+            else if (colorScheme === "false") { 
+                document.getElementsByClassName("darkmode-layer")[0].classList.remove("darkmode-layer--expanded");
                 document.getElementsByClassName("darkmode-layer")[0].classList.remove("darkmode-layer--no-transition");
-            }, 100);  
+                document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ff5722');
+                setTimeout(function(){
+                    document.getElementsByClassName("darkmode-layer")[0].classList.remove("darkmode-layer--no-transition");
+                }, 100);  
+            }
+            else {
+                document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--expanded");
+                document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--no-transition");
+                document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#009ecb');
+                setTimeout(function(){
+                    document.getElementsByClassName("darkmode-layer")[0].classList.remove("darkmode-layer--no-transition");
+                }, 100);  
+                localStorage.setItem('colorScheme', "true");
+                colorScheme = localStorage.getItem('colorScheme');
+                
+            }
         }
         else {
-            localStorage.setItem('colorScheme', "false");
+            if(colorScheme === "true") {
+                document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--expanded");
+                document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--no-transition");
+                document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#009ecb');
+                setTimeout(function(){
+                    document.getElementsByClassName("darkmode-layer")[0].classList.remove("darkmode-layer--no-transition");
+                }, 100);  
+            }
+            else {
+                localStorage.setItem('colorScheme', "false");
+                colorScheme = localStorage.getItem('colorScheme');
+            }
         }
     }
     checkThemeOnLoad();
 
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        if(colorScheme === "true") {
-            document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--expanded");
-            document.getElementsByClassName("darkmode-layer")[0].classList.add("darkmode-layer--no-transition");
-            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#009ecb');
-            setTimeout(function(){
-                document.getElementsByClassName("darkmode-layer")[0].classList.remove("darkmode-layer--no-transition");
-            }, 100);  
-        }
-        else if (colorScheme === "false") { 
-            document.getElementsByClassName("darkmode-layer")[0].classList.remove("darkmode-layer--expanded");
-            document.getElementsByClassName("darkmode-layer")[0].classList.remove("darkmode-layer--no-transition");
-            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ff5722');
-            setTimeout(function(){
-                document.getElementsByClassName("darkmode-layer")[0].classList.remove("darkmode-layer--no-transition");
-            }, 100);  
-        }
-        else {
-            localStorage.setItem('colorScheme', "true");
-        }
-    }
+    
 
 </script>

@@ -6,6 +6,7 @@ tags:
   - Public Website
 layout: layouts/post.njk
 logo: ../img/logo/tcf-bank.png
+templateClass: layout-post layout-post-portfolio
 ---
 
 <p class="lead-p">In 2015 TCF Bank was branding and bringing themselves into the 2010's. I stepped up to lead the translation between agencies and work hand-in-hand with our business partners for the final visual flourishes.</p>

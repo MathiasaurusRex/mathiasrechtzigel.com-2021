@@ -6,6 +6,7 @@ tags:
   - Public Website
 layout: layouts/post.njk
 logo: ../img/logo/MNFRB_Logo_LeftAligned_BlueCircle.png
+templateClass: layout-post layout-post-portfolio
 ---
 
 <p class="lead-p">The Federal Reserve Bank of Minneapolis is one of twelve Federal Reserve Banks. When I joined in 2019 they were kicking off a reimagining of how they would serve the public. At the center of this rebranding was the tagline: "Pursing an economy that works for all of us."</p>

@@ -346,7 +346,6 @@ header img:hover {
   grid-column: var(--grid-columns--base--centered) ;
 }
 
-
 .layout.layout-content article  {
   display: grid;
   grid-template-columns: var(--grid-columns--base);
@@ -373,6 +372,10 @@ header img:hover {
   font-size: var(--font-size--h3);
   margin-bottom: var(--space-medium);
   display: block;
+}
+
+.layout-post-portfolio .title-banner time  {
+  display: none;
 }
 
 .title-banner:after {
@@ -456,14 +459,8 @@ code {
 .project-list > .project-list--item .project-list--link:before {
   content: "";
   display: block;
-  padding-bottom: 100%;
+  padding-bottom: 50%;
   grid-area: 1 / 1 ;
-}
-
-@media(max-width: 600px) {
-  .project-list > .project-list--item .project-list--link:before {
-    padding-bottom: 50%;
-  }
 }
 
 .project-list > .project-list--item .project-list--link img {
@@ -529,6 +526,10 @@ code {
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, .24);
   box-shadow: none;
+}
+
+.device.desktop {
+  z-index: 1;
 }
 
 .device::before,
@@ -739,7 +740,7 @@ code {
 .device-collection .tablet-container {
   right: 0;
   max-width: 30%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .device-collection .desktop {
@@ -789,7 +790,7 @@ code {
   
   .img-comp-slider {
     position: absolute;
-    z-index: 9;
+    z-index: 9999;
     cursor: ew-resize;
     /*set the appearance of the slider:*/
     width: 100px;
@@ -853,7 +854,7 @@ code {
     width: 4rem;
     height: 4rem;
     position: fixed;
-    border-radius: 50%;
+    border-radius: 10px;
     left: var(--space-medium);
     bottom: var(--space-medium);
     cursor: pointer;
@@ -863,6 +864,7 @@ code {
     align-items: center;
     border: 0;
     z-index: 999;
+    overflow: hidden;
   }
 
   .darkmode-background {

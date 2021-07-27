@@ -6,6 +6,7 @@ tags:
   - Public Website
 layout: layouts/post.njk
 logo: ../img/logo/xrite.png
+templateClass: layout-post layout-post-portfolio
 ---
 
 <p class="lead-p">X-Rite was the first project where I had a major hand in the strategic direction of the design and technical implementation. Not only did we establish a design system that was flexible to the international content needs of the premier supplier of color calibration technology in the world, I ensured that the system would be able to adapt to the needs of Pantone's color of the year marketing push. </p>

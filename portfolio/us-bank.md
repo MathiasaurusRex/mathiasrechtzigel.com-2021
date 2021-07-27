@@ -6,6 +6,7 @@ tags:
   - Public Website
 layout: layouts/post.njk
 logo: ../img/logo/USBank.png
+templateClass: layout-post layout-post-portfolio
 ---
 
 <p class="lead-p">It's the end of 2017, and The Big Game is coming to Minneapolis at the beginning of 2018. Hosted at U.S. Bank Stadium. With a Nielsen Rating of 43.1 and an average of 106 million viewers. <br><br>This meant a lot of high profile projects needed to be aligned to our new brand and exceed the Web Content Accessibility Guidelines. </p>
@@ -136,14 +137,16 @@ if(document.documentElement.scrollWidth > 1000) {
 </script>
 
 <style>
-  .img-comp-container {
-    width: calc(100% + 600px);
-    height: 830px;
-    position: relative;
-    margin-left: -300px;
-    margin-right: -300px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    box-shadow: var(--box-shadow);
-}
+  @media(min-width: 1000px) {
+    .img-comp-container {
+        width: calc(100% + 600px);
+        height: 830px;
+        position: relative;
+        margin-left: -300px;
+        margin-right: -300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        box-shadow: var(--box-shadow);
+      }
+  }
 </style>

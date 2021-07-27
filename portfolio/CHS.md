@@ -6,6 +6,7 @@ tags:
   - Public Website
 layout: layouts/post.njk
 logo: ../img/logo/chs.png
+templateClass: layout-post layout-post-portfolio
 ---
 
 <p class="lead-p">CHS was one of my favorite clients while I was at Horizontal. Over the three years there was always an enhancement to be made, across their countless platforms. All in support of their farmer partners.</p>

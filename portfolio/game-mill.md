@@ -6,6 +6,7 @@ tags:
   - Public Website
 layout: layouts/post.njk
 logo: ../img/logo/gamemill.png
+templateClass: layout-post layout-post-portfolio
 ---
 
 <p class="lead-p">GameMill Entertainment, has an established track record for leveraging the equity of some of the world’s most beloved brands in the $100 billion video game market. With partnerships from Disney, Cartoon Network, NBC Universal, Nickelodeon, they needed a new website to showcase their products and ensure that they could wow new partners.</p>

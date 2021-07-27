@@ -6,6 +6,7 @@ tags:
   - Public Website
 layout: layouts/post.njk
 logo: ../img/logo/masterbrand.png
+templateClass: layout-post layout-post-portfolio
 ---
 
 <p class="lead-p">When your client has a family of eight award-winning websites that need to be updated so that they are responsive and meet the needs of their customers you take a lot of care in creating a technical system to ensure that the  </p>
