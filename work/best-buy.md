@@ -8,8 +8,8 @@ layout: layouts/post.njk
 logo: ../img/logo/bestbuy.png
 templateClass: layout-post layout-post-portfolio
 
-socialImage: img/social/work/social_mathias_bestbuy.png
-url: https://www.mathiasrechtzigel.com/work
+socialImage: https://www.mathias.rechtzigel.com/img/social/work/social_mathias_bestbuy.png
+url: https://www.mathiasrechtzigel.com/work/best-buy
 ---
 
 <p class="lead-p">Trial by fire. Best Buy was where I cut my web development teeth. A lot of learning, a lot of growing, and almost two years of being on-call 24/7. A lot of great memories and stories came out the Best Buy Digital Insert</p>
