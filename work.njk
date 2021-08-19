@@ -2,12 +2,13 @@
 layout: layouts/content.njk
 permalink: /work/
 templateClass: layout-content
-tagline: Portfolio
 title: Work
+socialImage: /img/social/social-mathias-work.png
+url: https://www.mathiasrechtzigel.com/work
 eleventyNavigation:
   key: Work
   order: 4
 ---
 
-{% set projectslist = collections.projects %}
+{% set projectslist = collections.work %}
 {% include "components/projectslist.njk" %}

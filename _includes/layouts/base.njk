@@ -6,6 +6,22 @@
     <title>{{ title or metadata.title }} | Mathias Rechtzigel</title>
     <meta name="description" content="{{ description or metadata.description }}">
     <meta name="theme-color" content="#ff5722" >
+
+    <!-- open graph meta tags -->
+
+    <meta property="og:title" content="{{ title or metadata.title }} | Mathias Rechtzigel">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="{{ description or metadata.description }}">
+    <meta property="og:image" content="{{ socialImage or metadata.socialImage }}">
+    <meta property="og:url" content="{{ url or metadata.url }}">
+    <meta property="og:site_name" content="MathiasRechtzigel.com">
+    <meta name="twitter:title" content="{{ title or metadata.title }} | Mathias Rechtzigel">
+    <meta name="twitter:description" content="{{ description or metadata.description }}">
+    <meta name="twitter:image" content="{{ socialImage or metadata.socialImage }}">
+    <meta name="twitter:image:alt" content="{{ socialImageAlt or metadata.socialImageAlt }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mathiasaurusrex">
+
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦖</text></svg>">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
