@@ -8,7 +8,7 @@ layout: layouts/post.njk
 logo: ../img/logo/bestbuy.png
 templateClass: layout-post layout-post-portfolio
 
-socialImage: ../img/social/work/social_mathias_bestbuy.png
+socialImage: img/social/work/social_mathias_bestbuy.png
 url: https://www.mathiasrechtzigel.com/work
 ---
 
