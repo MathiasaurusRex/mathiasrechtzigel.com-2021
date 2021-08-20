@@ -7,6 +7,9 @@ tags:
 layout: layouts/post.njk
 logo: ../img/logo/gamemill.png
 templateClass: layout-post layout-post-portfolio
+
+socialImage: https://www.mathiasrechtzigel.com/img/social/work/social-gamemill.png
+url: https://www.mathiasrechtzigel.com/work/game-mill
 ---
 
 <p class="lead-p">GameMill Entertainment, has an established track record for leveraging the equity of some of the world’s most beloved brands in the $100 billion video game market. With partnerships from Disney, Cartoon Network, NBC Universal, Nickelodeon, they needed a new website to showcase their products and ensure that they could wow new partners.</p>
@@ -28,4 +31,5 @@ templateClass: layout-post layout-post-portfolio
 </div>
 
 ## Technical Aspirations
+
 The original website was built using NextJS and a Headless instance of Wordpress. The long term plan was to use the main Gamemill.com platform as the central hub for content and that content could then be used for marketing sites for the individual product launches. That future never quite materialized but the foundation is still there for when it makes sense for the business to make that jump.

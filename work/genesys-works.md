@@ -7,6 +7,9 @@ tags:
 layout: layouts/post.njk
 logo: ../img/logo/GenesysWorks.png
 templateClass: layout-post layout-post-portfolio
+
+socialImage: https://www.mathiasrechtzigel.com/img/social/work/social-gw.png
+url: https://www.mathiasrechtzigel.com/work/genesys-works
 ---
 
 <p class="lead-p">During the Summer of 2017 I took a break from the digital world to teach two groups of about twenty young professionals at Genesys Works. At the end of a nine week program all of the young professionals earned a paid internship during their senior year of High School.<br><br> It was a transformative experience that revitalized my love for technology and teaching others.</p>

@@ -7,19 +7,23 @@ tags:
 layout: layouts/post.njk
 logo: ../img/logo/MNFRB_Logo_LeftAligned_BlueCircle.png
 templateClass: layout-post layout-post-portfolio
+
+socialImage: https://www.mathiasrechtzigel.com/img/social/work/social_mathias_mplsfed.png
+url: https://www.mathiasrechtzigel.com/work/federal-reserve
 ---
 
 <p class="lead-p">The Federal Reserve Bank of Minneapolis is one of twelve Federal Reserve Banks. When I joined in 2019 they were kicking off a reimagining of how they would serve the public. At the center of this rebranding was the tagline: "Pursing an economy that works for all of us."</p>
 
-In 2019 the application development group was a year into their <i>Agile Transformation</i>. They identified a gap in a dedicated Front End Development, User Experience and accessibility resource. 
+In 2019 the application development group was a year into their <i>Agile Transformation</i>. They identified a gap in a dedicated Front End Development, User Experience and accessibility resource.
 
 That's where I came in. I hit the ground running my first week: identified gaps within approved technologies that we could use to build out the Minneapolis Fed's first design system. I created partnerships between departments that rarely talked to each other and emphasised the importance of user-centered design. Finally being a consultant to our executive level sponsors to invest in an accessible, reusable and performant system that could support a 30+ year volume of content that they had to migrate from their legacy system.
 
 During the completion of the project, they could point to deliverables that extended beyond the project. A design system wasn't just contained to the public website, it could be leveraged across our entire portfolio of internal applications (with some minor tweaks, you don't need big bold marketing fonts on internal data applications). Soon I was able to spin out proof of concept websites with real code in less than a day. Gaining budget and approval to expand the team for larger application initiatives.
 
-It wasn't just a pie in the sky dream. With a decade of experience delivering responsive and flexible websites that could easily be modified based on the needs of our stakeholders. 
+It wasn't just a pie in the sky dream. With a decade of experience delivering responsive and flexible websites that could easily be modified based on the needs of our stakeholders.
 
 ## Consistency for thousands of economic papers both new and old.
+
 As an economic research organization the Federal Reserve Bank of Minneapolis publishes A LOT OF PAPERS and supplementary educational material. With three core personas: <strong>uninformed</strong>, <strong>informed</strong>, and <strong>academic</strong> the Federal Reserve Bank of Minneapolis creates personalized content in service of its mission of <a href="https://minneapolisfed.org/article/2020/welcome">"Pursuing an economy that works for all of us"</a>.
 
 To support this mission, the Public Affairs team needed a technical and design strategy that would scale for the long term but also ensuring that the solution wouldn't place an additional burden on the content authoring team. This required a strategy that would ensure that all legacy content (30+ years), current, and future content could adhere to our new design language.
@@ -40,7 +44,6 @@ To support this mission, the Public Affairs team needed a technical and design s
   </div>
 </div>
 
-
 ## Reducing Spin on <i>Red Balloon, Blue Sky</i> Conversations
 
 You have been there. Someone says that you need to change some spacing on the "Card Component". Your developer opens up their fancy design system and low and behold there's four different cards that have different spacing on the four breakpoints that you support. Everyone is crunched for time because you're trying to do more with less (but somehow you always do less with more, isn't that funny?), so your development team makes a quick change and deploys it. Looks good on my machine, ship it.
@@ -49,12 +52,11 @@ A couple of weeks later the Creative Director adds a comment to the ticket: "Not
 
 Oh no. So much time has passed since the developer has made the change that they can't quite remember <i>what</i> they changed, and now they have to make another change.
 
-All design debt is technical debt and it's important to manage it upfront then letting changes cascade into the future where the easiest way to fix the issue would be to start from scratch. 
+All design debt is technical debt and it's important to manage it upfront then letting changes cascade into the future where the easiest way to fix the issue would be to start from scratch.
 
-<strong>How can we fix this?</strong> During my time at the Federal Reserve Bank of Minneapolis I created a couple of tools to help reduce this spin. Instead of having our wireframes as pdf's on the server, the names of the components in the design system, and the back end code naming their components in different ways I created a tool based on <a href="https://meyerweb.com/eric/thoughts/2017/11/27/generating-wireframe-boxes-with-css-and-html5/">Eric Meyer's Generating Wireframe Boxes with CSS and HTML5</a> that allowed each and every component we created to have a consistent nomenclature across multiple projects and code repositories. 
+<strong>How can we fix this?</strong> During my time at the Federal Reserve Bank of Minneapolis I created a couple of tools to help reduce this spin. Instead of having our wireframes as pdf's on the server, the names of the components in the design system, and the back end code naming their components in different ways I created a tool based on <a href="https://meyerweb.com/eric/thoughts/2017/11/27/generating-wireframe-boxes-with-css-and-html5/">Eric Meyer's Generating Wireframe Boxes with CSS and HTML5</a> that allowed each and every component we created to have a consistent nomenclature across multiple projects and code repositories.
 
 <p class="lead-p">In short... I baked the wireframes INTO the website, and with a couple lines of CSS and Javascript, anyone could toggle "Wireframe Mode", eliminate spin, and start speaking the same language. Designers could more easily communicate with back end developers and it reduced gaps between teams.</p>
-
 
 <div class="img-comp-container">
   <div class="img-comp-img">

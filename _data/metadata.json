@@ -3,7 +3,7 @@
   "url": "https://mathiasrechtzigel.com/",
   "language": "en",
   "description": "Mathias Rechtzigel is a designer and developer in Minneapolis, Minnesota focused on creating accessible and performant websites built with HTML, CSS and JS",
-  "socialImage": "img/social/social_mathias_rechtzigel.png",
+  "socialImage": "https://www.mathiasrechtzigel.com/img/social/social_mathias_rechtzigel.png",
   "feed": {
     "subtitle": "Mathias Rechtzigel is a designer and developer in Minneapolis, Minnesota focused on creating accessible and performant websites built with HTML, CSS and JS",
     "filename": "feed.xml",
