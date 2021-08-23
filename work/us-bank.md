@@ -8,8 +8,8 @@ layout: layouts/post.njk
 logo: ../img/logo/USBank.png
 templateClass: layout-post layout-post-portfolio
 
-socialImage: https://www.mathiasrechtzigel.com/img/social/work/social-tcf.png
-url: https://www.mathiasrechtzigel.com/work/tcf-bank
+socialImage: https://www.mathiasrechtzigel.com/img/social/work/social-usb.png
+url: https://www.mathiasrechtzigel.com/work/us-bank
 ---
 
 <p class="lead-p">It's the end of 2017, and The Big Game is coming to Minneapolis at the beginning of 2018. Hosted at U.S. Bank Stadium. With a Nielsen Rating of 43.1 and an average of 106 million viewers. <br><br>This meant a lot of high profile projects needed to be aligned to our new brand and exceed the Web Content Accessibility Guidelines. </p>

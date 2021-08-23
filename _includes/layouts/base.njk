@@ -6,6 +6,8 @@
     <title>{{ title or metadata.title }} | Mathias Rechtzigel</title>
     <meta name="description" content="{{ description or metadata.description }}">
     <meta name="theme-color" content="#ff5722" >
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en"> 
 
     <!-- open graph meta tags -->
 
@@ -28,6 +30,16 @@
     
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114446306-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114446306-1');
+</script>
   </head>
   <body>
     <div class="body-wrapper">

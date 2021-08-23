@@ -2,12 +2,12 @@
 <ol class="article-list">
 {% for post in postslist | reverse %}
   <li class="article-list--item{% if post.url == url %} article-list--item-active{% endif %}">
-    <time class="article-list--date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
     <a href="{{ post.url | url }}" class="article-list--link">
       <div class="article-list--title">
         {% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}
       </div>
       <div class="article-list--description">{{post.data.description}}</div>
+      <div class="article-list--date">Published: <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time></div>
     </a>
   </li>
 {% endfor %}
