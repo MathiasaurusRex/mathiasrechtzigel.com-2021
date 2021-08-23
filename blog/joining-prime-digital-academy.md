@@ -29,8 +29,8 @@ I believe that everyone deserves access. I believe that everyone should have age
 
 <strong>I believe that we can, and should, do more.</strong>
 
-To align my career with these beliefs I’m excited to announce the next step will be at <a href="https://www.primeacademy.io/" target="_blank">Prime Digital Academy</a> as a <a href="https://www.primeacademy.io/courses/ux" target="_blank">Instructor and User Experience Designer</a>.
+To align my career with these beliefs I’m excited to announce the next step will be with <a href="https://www.primeacademy.io/" target="_blank">Prime Digital Academy</a> as an <a href="https://www.primeacademy.io/courses/ux" target="_blank">Instructor and User Experience Designer</a>.
 
-I hope to bring my decade plus of experience and help guide the next generation of User Experience professionals. To help them create a future where digital services meet the demands and expectations of both customers and the public. Where websites are quick, easy, secure, and accessible and built on a foundation that is both aspirational in the long term and actionable in the short term. To help them gain marketable skills that allow them to build a sustainable and rewarding career.
+I hope to bring my decade plus of experience and help guide the next generation of User Experience professionals. To help them create a future where digital services meet the demands and expectations of both customers and the public. Where websites are quick, easy, secure, and accessible and built on a foundation that is both aspirational in the long term and actionable in the short term. To help them learn marketable skills; so that they can feel confident in their careers, safe speaking up, and contribute to work that matters.
 
 I've had an extremely rewarding first decade of my technology and design career and I’m excited to help others as they take the first step on theirs.
