@@ -25,9 +25,9 @@ The five years since that transformative summer I have committed to becoming a b
 
 During my time with U.S. Bank I spent time learning with amazingly talented accessibility professionals and dove head first into making their highest profile websites exceed the Web Content Accessibility Guidelines for Super Bowl LII. During my time with the Federal Reserve Bank of Minneapolis and The Department of the Treasury I committed to ensuring that all of my projects that I started improved the lives of the public by transforming how government uses technology by designing with direct feedback from the american public so that we could modernize our websites and meet the expectations that were being elevated by the private sector.
 
-I believe that everyone deserves access. I believe that everyone should have agency to live life unencumbered by restrictions created by historical disenfranchisement. I believe the designed space should be continuously improved as our understanding of how people interact with technology change.
+I believe that everyone deserves access. I believe that everyone should have agency to live life unencumbered by technology. I believe the designed space should be continuously improved as our understanding of how people interact with technology change.
 
-<strong>I believe that we can, and should, do more.</strong>
+<strong>I believe that we as technologists and designers can, and should, do more.</strong>
 
 To align my career with these beliefs I’m excited to announce the next step will be with <a href="https://www.primeacademy.io/" target="_blank">Prime Digital Academy</a> as an <a href="https://www.primeacademy.io/courses/ux" target="_blank">Instructor and User Experience Designer</a>.
 
