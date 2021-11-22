@@ -41,3 +41,5 @@ Kat shared about how we can create more safe and ethical research practices. Ins
 We often use the adage in tech that we should move fast and break things, and often us tech workers aren't retrospective enough to go back and fix the things we break.
 
 
+
+
