@@ -40,3 +40,4 @@ This was something that we struggled with a lot within the Federal space. If we 
 Kat shared about how we can create more safe and ethical research practices. Instead of just giving someone a $75 target gift card we have to pay back to the community either directly or indirectly and be transparent about our findings and how they are going to be used.
 We often use the adage in tech that we should move fast and break things, and often us tech workers aren't retrospective enough to go back and fix the things we break.
 
+
