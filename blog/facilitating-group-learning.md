@@ -1,5 +1,5 @@
 ---
-title: Facilitating Group Learning - How to build more empathetic workplaces
+title: Facilitating Group Learning
 description: One of the most impactful books that I've read over the past year was Facilitating Group Learning by George Lakey
 date: 2022-01-31
 tags:
