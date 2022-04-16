@@ -26,7 +26,7 @@ Policy and regulation are often created in response to a need. Basic human needs
   }
 </style>
 
-#Policy and Resiliency 
+# Policy and Resiliency 
 On April 12, 2022 I facilitated a fun happy hour session with U.S. Digital Response. Topics included accessibility, resiliency  with a light touch on policy.
 
 <a href="https://99percentinvisible.org/episode/curb-cuts/">I spoke on the story of Ed Roberts (Link to 99 Percent Invisible | Episode 308 | Curb Cuts)</a>. How he smashed down curbs to create curb cuts.  It paints a picture of how activism pushes public policy for the better.
