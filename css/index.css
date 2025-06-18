@@ -345,7 +345,7 @@ header img:hover {
 
 .layout .title-banner {
   grid-column: 1/-1;
-  margin-bottom: var(--space-large);
+  margin-bottom: var(--space-small);
 }
 .layout.layout-post .content-wrapper {
   grid-column: var(--grid-columns--base--centered);
@@ -878,8 +878,8 @@ code {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: radial-gradient(#cdcdcd 7%, transparent 7%),
-    radial-gradient(#cdcdcd 7%, transparent 7%);
+  background-image: radial-gradient(#f4f4f4 7%, transparent 7%),
+    radial-gradient(#f4f4f4 7%, transparent 7%);
   background-position: 0 0, 8px 8px;
   background-size: 16px 16px;
 }
