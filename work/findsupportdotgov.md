@@ -31,9 +31,14 @@ We set out to change that.
 
 
 ## Co-creating with community across the country
-We designed our usability research to hit different audiences across the country. We conducted over 9 rounds of research across the country leveraging different modes: card sorting at mental health fairs in rural Minnesota, remote usability sessions with people with disabilities from Alaska, conversations with individuals recently involved in Los Angeles. 
+We designed our usability research to hit different audiences across the country. We conducted over 9 rounds of research across the country leveraging different modes: card sorting at mental health fairs in rural Minnesota, remote usability sessions with people with disabilities from Alaska, conversations with individuals recently involved in the justice system in Los Angeles. 
+
+<img src="/img/samhsa/findsupport-research.png" alt="Iterations of Findsupport from prototype to final on mobile." style="box-shadow: none; margin-bottom: 0;">
+<p class="small"><em>Low fidelity prototypes and photos of user research.</em></p>
 
 Over the course of these rounds of research we started with low-fidelity prototypes and card-sorting and moved into building more robust content testing on Findsupport.gov (English) and EncuentraApoyo.gov (Spanish)
+
+
 
 This resulted in three types of content:
 
@@ -43,9 +48,29 @@ This resulted in three types of content:
 
 We designed in this way to cross link. We saw that users had different mental models. Some would see stories and find similarities in their own journies. Others knew exactly what they needed and were hung up on the details of navigating Medicaid in their state.
 
+<div class='device-collection'>
+  <div class='phone-container'>
+    <div class='device phone'>
+      <img src="/img/samhsa/findsupport-mobile.png" alt="Findsupport on mobile showing options for insurance payment.">
+    </div>
+  </div>
+  <div class='tablet-container'>
+    <div class='device tablet'>
+      <img src='/img/samhsa/findsupport-tablet.png' alt="Findsupport on tablet showing the desktop">
+    </div>
+  </div>
+  <div class='device desktop'>
+    <img src='/img/samhsa/findsupport-desktop.png' alt="Findsupport on desktop, showing navigation for different care options.">
+  </div>
+</div>
+
 ## Launching with The White House
 
 The need for our project was highlighted in President Biden’s 2022 and 2023 State of the Union Address and throughout our project we coordinated with high level officials including the White House’s Domestic Policy Council on Mental Health and the Secretary Xavier Becerra’s Office in the Department of Health and Human Services. Our coordination led to a robust public Health Campaign from both The White House, the Department of Health and Human Services and the Substance Abuse and Mental Health Service Administration.  
+
+
+<img src="/img/samhsa/potus-tweet.png" alt="Tweet from Biden's Twitter Account.">
+<img src="/img/samhsa/whitehouse-tweet.png" alt="Tweet from White House's Twitter Account.">
 
 <strong>The resulted in the first four months:</strong>
 
@@ -54,8 +79,16 @@ The need for our project was highlighted in President Biden’s 2022 and 2023 St
 * User research that led to another project solving an issue with the Suicide and Crisis Lifeline 
 * A clear, high-profile win for a new team to earn more work across our agency.
 
-### This is only a small story related to this work. You can find more resources across the internet
+## Presentations of this work
+I've presented and shared stories of this work and how to approach both public health and technology at multiple conferences, including:
+
+* <a href="https://docs.google.com/presentation/d/13clhageU7dj4W7u28njQsm7tcPe7Rzslh16jwZ5Mycc/edit?slide=id.p1#slide=id.p1">Building Better in the 21st Century</a> at the Minnesota Public Health Association Conference, 2023
+* <a href="https://docs.google.com/presentation/d/1BJUwjoczHFeQ4nB5CCgrnY-DXdvwfkLpttvHL8nXQdA/edit?slide=id.p1#slide=id.p1">Designing for Crisis</a> at the Twin Cities UX Meetup (2024), Minnebar (2025), and For the Public</a>
+
+## You can find more news across across the internet
 
 * I supported more work related to Findsupport.gov at CMS. <a href="https://www.cms.gov/digital-service/findsupportgov">Additional stats are shared on CMS.gov</a>
 * I supervised career fellows on this project. <a href="https://digitalcorps.gsa.gov/projects/cms-designing-a-how-to-guide-for-improving-access-to-behavioral-health-care-and-support/">They shared their work on their website.</a>
 * The White House shared this work as a collection of actions for Mental Health Awareness month. <a href="https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2023/05/18/fact-sheet-biden-harris-administration-announces-new-actions-to-tackle-nations-mental-health-crisis/">You can find the press release on the White House Archives.</a>
+* <a href="https://x.com/WhiteHouse46/status/1653112050980118567">The White House Archives Tweet</a>
+* <a href="https://x.com/POTUS46Archive/status/1653383847030198273">President Biden's Archived Tweet</a>
