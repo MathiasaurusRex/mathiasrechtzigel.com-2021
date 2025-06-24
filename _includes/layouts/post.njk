@@ -11,8 +11,8 @@ templateClass: layout-post
 </article>
 
 
-{%- set nextPost = collections.blog | getNextCollectionItem(page) %}
-{%- set previousPost = collections.blog | getPreviousCollectionItem(page) %}
+{%- set nextPost = collections.writing | getNextCollectionItem(page) %}
+{%- set previousPost = collections.writing | getPreviousCollectionItem(page) %}
 {%- if nextPost or previousPost %}
 <hr>
 <div class="article-footer">
