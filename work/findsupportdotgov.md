@@ -1,5 +1,5 @@
 ---
-title: Helping people find support mental health and substance use. 
+title: Designing for Crisis, Plain Language and Public Trust at SAMHSA
 description: Led the design for SAMHSA to launch plain language mental health tools, guiding 988 users to support, insurance info, and recovery stories through user-centered design.
 date: 2023-10-01
 tags:
@@ -78,6 +78,16 @@ The need for our project was highlighted in President Biden’s 2022 and 2023 St
 * 15,000 engagements with the crisis response feature
 * User research that led to another project solving an issue with the Suicide and Crisis Lifeline 
 * A clear, high-profile win for a new team to earn more work across our agency.
+
+## What about AI?
+Our plain language content became foundational to how critical resources are represented in generative AI tools. By collaborating with Google and publishing Findsupport.gov, we ensured that trustworthy content became visible in both search and large language models -- helping people find credible answers even when they don’t land on our site directly.
+
+<strong>Chat GPT serving up Findsupport.gov content when asked about state resources.</strong>
+<img src="/img/samhsa/findsupport-chatgpt.png" alt="Chat GPT serving up Findsupport.gov content when asked about state resources..">
+
+<strong>Google AI LAbs serving up Findsupport.gov content when asked about state resources.</strong>
+<img src="/img/samhsa/findsupport-googleai.png" alt="Google AI LAbs serving up Findsupport.gov content when asked about state resources.">
+
 
 ## Presentations of this work
 I've presented and shared stories of this work and how to approach both public health and technology at multiple conferences, including:
