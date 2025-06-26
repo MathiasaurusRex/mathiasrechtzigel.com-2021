@@ -208,6 +208,12 @@ ol {
   font-weight: bold;
 }
 
+.note-p {
+  padding: 20px;
+  border: 2px solid var( --orange);
+  border-radius: 8px; 
+}
+
 a,
 a:visited {
   color: var(--color-text);

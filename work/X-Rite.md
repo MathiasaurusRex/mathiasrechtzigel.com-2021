@@ -73,6 +73,10 @@ We leveraged Sitecore's internationalization engine to ensure that all of the Gl
   </div>
 </div>
 
+Managing languages also required our own internal content strategy and workflows leveragine Sitecore as our content management system.
+<img src="/img/xrite/xrite-internationalization-globalgateway.png" alt="Screenshot of the global gateway"/>
+
+
 ## Building interactive experiences that drive traffic.
 
 In order to drive traffic to the site, we built a responsive Color Challenge and Hue Test. One in 255 women and One in 12 men have some form of color vision deficiency. This interactive page served as an educational item that professionals who work with color could take to prove their mettle.
