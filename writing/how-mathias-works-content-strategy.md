@@ -61,9 +61,9 @@ Masterbrand Cabinets is the parent brand for 8+ subsidiary brands. We conducted 
 **Managing internationalization at scale**  
 X-Rite required us to translate individual pages into 14 languages across multiple regions. This meant carefully managing both our information architecture and the coordination process with translation teams, ensuring consistency and organization throughout.
 
-**Read more in my [X-Rite case study](https://mathiasrechtzigel.com/work/xrite).**
+**Read more in my [X-Rite case study](https://mathiasrechtzigel.com/work/x-rite/).**
 
-## Speaking and Education
+## Speaking
 I've spoken to diverse audiences about Content Strategy, Information Architecture, and how they improve Customer Experience. This includes:
 
 * **World Information Architecture Day**, 2020 - CORE Content, Reusable Content at Scale
