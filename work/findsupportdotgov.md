@@ -8,7 +8,6 @@ layout: layouts/post.njk
 logo: ../img/logo/SAMHSA-logo-black.png
 templateClass: layout-post layout-post-portfolio
 
-socialImage: https://www.mathiasrechtzigel.com/img/social/work/social-usb.png
 url: https://www.mathiasrechtzigel.com/work/findsupportdotgov
 ---
 

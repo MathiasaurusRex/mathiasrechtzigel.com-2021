@@ -8,7 +8,6 @@ layout: layouts/post.njk
 logo: ../img/logo/prime.png
 templateClass: layout-post layout-post-portfolio
 
-socialImage: https://www.mathiasrechtzigel.com/img/social/work/social-masterbrand.png
 url: https://www.mathiasrechtzigel.com/work/prime-digital-academy
 ---
 

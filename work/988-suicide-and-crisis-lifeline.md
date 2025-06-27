@@ -8,7 +8,6 @@ layout: layouts/post.njk
 logo: ../img/logo/988-logo-hz-navy.png
 templateClass: layout-post layout-post-portfolio
 
-socialImage: https://www.mathiasrechtzigel.com/img/social/work/social-usb.png
 url: https://www.mathiasrechtzigel.com/work/988-suicide-and-crisis-lifeline
 ---
 
