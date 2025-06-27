@@ -1,5 +1,5 @@
 ---
-title: Expanding Pathways into Tech at MCAD
+title: Building Generational Tech Capacity at MCAD
 description: Trauma-informed tech education designed to support career growth and whole-person learning.
 date: 2021-01-02
 tags:
