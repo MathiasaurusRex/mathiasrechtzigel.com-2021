@@ -67,3 +67,13 @@ There is a lot more content strategy process work that I am being respectful not
 
 ### A snapshot of a weeks deliverables
 <img src="/img/prime/prime-week3-a.png" alt="A snapshot of a weeks deliverables."/>
+
+## Trauma-Informed Education Design in a Pandemic
+A hard reality was that we were also **Public Health Professionals**, in addition to our responsibilities as educators. This work took place during the height of the COVID-19 pandemic, when learners were navigating overlapping personal, economic, and societal upheavals. Many students came from non-traditional backgrounds and were making career changes after jobs lost in the lockdowns. Others were processing the trauma of the uprisings in Minneapolis, just blocks from where we gathered.
+
+We approached teaching with empathy and flexibility, grounded in trauma-informed practices. This meant balancing the need for structure with room for care—designing curriculum that was rigorous but adaptable, and creating space for students to bring their whole selves into the learning environment.
+
+There were challenges, of course. But I’m proud of how we supported people through an uncertain time—and helped them step into new roles with confidence and skill.
+
+**A whiteboard sketching a curriculum. At the top: COVID Return Policy**
+<img src="/img/prime/prime-whiteboard.jpg" alt="Picture of a whiteboard with a curriculum. At the top states: COVID-19 Policy"/>
