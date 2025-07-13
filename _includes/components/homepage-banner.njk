@@ -1,7 +1,45 @@
 <section class="title-banner">
+  <div class="title-banner--content">
     <div class="title-banner--title">
       <h1>
-        {{ tagline }}
+        Hi, I'm Mathias.
       </h1>
+      <p class="lead-p">I am a service designer, user experience researcher, educator and speaker based in  the Twin Cities.</p>
     </div>
+    <div class="title-banner--image">
+      <img src="/img/home/mathias-presenting.jpeg" alt="Mathias Rechtzigel headshot" />
+    </div>
+  </div>
 </section>
+
+<script>
+  const words = ['service designer', 'technologist', 'teacher', 'advisor', juggler'];
+  const rotatingWord = document.getElementById('rotatingWord');
+  let currentIndex = 0;
+
+  function rotateWord() {
+    // Start fade out
+    rotatingWord.classList.add('fade-out');
+    
+    // After fade out, change word and fade in
+    setTimeout(() => {
+      rotatingWord.textContent = words[currentIndex];
+      rotatingWord.classList.remove('fade-out');
+      rotatingWord.classList.add('fade-in');
+      
+      // Remove fade-in class after animation completes
+      setTimeout(() => {
+        rotatingWord.classList.remove('fade-in');
+      }, 500);
+    }, 500);
+    
+    // Move to next word
+    currentIndex = (currentIndex + 1) % words.length;
+  }
+
+  // Start the rotation
+  rotateWord();
+  
+  // Set interval for 3 seconds
+  //setInterval(rotateWord, 3000);
+</script>

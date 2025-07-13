@@ -42,13 +42,14 @@
 </script>
   </head>
   <body>
+  
     {% include "components/header.njk" %}
-    <div class="body-wrapper">
+    
 
+    <div class="body-wrapper">
       <main{% if templateClass %} class="layout {{ templateClass }}"{% endif %}>
           {{ content | safe }}
       </main>
-
       <footer></footer>
     </div>
     {% include "components/dark-mode-button.njk" %}

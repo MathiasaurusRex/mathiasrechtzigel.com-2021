@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 
 html {
-  --orange: #ff5722;
+  --orange: #9ae4d5;
   --orange--inverted: #009ecb;
   --black: #27282c;
   --white: #ffffff;
@@ -246,7 +246,7 @@ a:hover {
 
 hr {
   background-color: none;
-  height: 5px;
+  height: 1px;
   border-style: none;
   border-width: 0;
   margin-top: 30px;
@@ -351,8 +351,8 @@ header img:hover {
 
 .layout .title-banner {
   grid-column: 1/-1;
-  margin-bottom: var(--space-small);
 }
+
 .layout.layout-post .content-wrapper {
   grid-column: var(--grid-columns--base--centered);
 }
@@ -418,6 +418,93 @@ header img:hover {
 @media (max-width: 500px) {
   .layout-home .title-banner h1 {
     font-size: clamp(2rem, 9vw, 12rem);
+  }
+}
+
+/* Homepage Banner with Headshot */
+.title-banner--content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-large);
+  align-items: center;
+  max-width: var(--base-max-width);
+  margin: 0 auto;
+}
+
+.title-banner--content-body {
+  grid-template-columns: 1fr 1fr;
+}
+
+.title-banner--image {
+  position: relative;
+}
+
+.title-banner--image:before,
+.title-banner--image:after {
+  height: 20px;
+  width: 300px;
+  background-color: var(--orange);
+  content: "";
+  position: absolute;
+  z-index: 2000000;
+}
+.title-banner--image:before {
+  top: 40px;
+  left: -40px;
+}
+
+.title-banner--image:after { 
+  bottom: 40px;
+  right: -40px;
+}
+
+.title-banner--image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 0;
+  position: relative;
+  z-index: 100000;
+}
+
+
+.title-banner--title {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.rotating-word {
+  position: relative;
+  display: inline-block;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.rotating-word.fade-out {
+  opacity: 0;
+}
+
+.rotating-word.fade-in {
+  opacity: 1;
+}
+
+/* Responsive design for banner */
+@media (max-width: 1000px) {
+  .title-banner--content {
+    gap: var(--space-medium);
+  }
+}
+
+@media (max-width: 800px) {
+  .title-banner--content {
+    grid-template-columns: 1fr;
+    gap: var(--space-medium);
+  }
+  
+  .title-banner--title {
+    justify-content: center;
   }
 }
 
