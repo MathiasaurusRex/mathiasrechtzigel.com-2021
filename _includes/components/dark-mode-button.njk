@@ -11,11 +11,11 @@
         document.getElementsByClassName("darkmode-layer")[0].classList.toggle("darkmode-layer--expanded");
         if(colorScheme === "true") {
             localStorage.setItem('colorScheme', "false");
-            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ff5722');
+            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#9ae4d5');
         }
         else if(colorScheme === "false") { 
             localStorage.setItem('colorScheme', "true");
-            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#009ecb');
+            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#5d182a');
         }
         colorScheme = localStorage.getItem('colorScheme');        
     }

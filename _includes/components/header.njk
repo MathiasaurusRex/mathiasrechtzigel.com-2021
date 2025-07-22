@@ -1,5 +1,5 @@
 <header>
-  <a class="home" href="{{ '/' | url }}">{{ metadata.title }}</a>
+  <a class="home" href="{{ '/' | url }}">🦖🦅<span class="sr-only">{{ metadata.title }}</span></a>
   <ul class="navigation">
   {%- for entry in collections.all | eleventyNavigation %}
     <li class="navigation-item{% if entry.url == page.url %} navigation-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>

@@ -30,7 +30,7 @@ Through user research with hospitals, billing specialists, and service providers
 * <strong>Website limitations</strong>. Hospitals needed to show thousands of services in a user-friendly way, but drag-and-drop site builders made that difficult.
 * <strong>Enforcement pressure</strong>. Hospitals wanted to follow the rules, but there was no easy way to check if their files met the standards.
 
-## Our first prototyp: an easy-to-use validator
+## Our first prototype: an easy-to-use validator
 
 As any good content strategist knows, you have to make sure that you lead with content first. Content in this context meant formatting the chargemaster to meet the needs of the public. 
 
