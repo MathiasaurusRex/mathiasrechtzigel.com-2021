@@ -20,7 +20,6 @@ Starting in 2021, every hospital in the United States had to post clear and acce
 * A consumer-friendly list of shoppable services
 
 
-
 ## Sounds simple, what was the problem?
 Many hospitals, especially small or rural ones, were not set up for this. They used basic website builders like Squarespace, Wix, or Webflow. Their priority was patient care, not building complex web tools. Larger organizations could also get caught in a morass due to conflicting opinions from people who were not the authority on the subject.
 
@@ -38,18 +37,28 @@ To reduce the burden, we built a simple prototype. Hospitals could upload their 
 
 I modeled the tool after web-based validators like the WebAIM contrast checker, HTML5 validators, and Lighthouse tools in Chrome. Our goal was to make validation as simple and reliable as possible. This was only one in a series of tools that you can find on the Hospital Price Transparency website.
 
-## Once we had that: a web crawler and validator of our own
+<img src="/img/hpt/hpt-upload.png" alt="Hospital Price Transparency Upload"/>
+<img src="/img/hpt/hpt-results.png" alt="Hospital Price Transparency Results page"/>
+
+## Continous improvement
 
 Now that we knew that hospitals had the tools to meet their requirements, we could provide some extra guidance on where to place the file and how to format it. We created a new metadata format that would allow hospitals to place their file where they needed it based on their technology constraints. This allowed us to automate our enforcement and we could give hospitals a friendly heads up if we saw something out of sorts.
 
-This would help solve most of the issues related to website limitations, but in cases that it didn't it gave more time and space for our outreach team to hear about the technical edge cases that effected hospitals with lower resources.
+This would help solve most of the issues related to website limitations, but in cases that it didn't it gave more time and space for our outreach team to hear about the technical edge cases that effected hospitals with lower resources. Some further resources we provided:
 
-## What was our impact?
+* 1:1 technical support for small rural hospitals using website builders
+* Alternative meta data standards for hospitals using SaaS products
+* More robust open source tools that solved user pain points such as naming convention automation and meta data evaluation.
+
+## Impact
 
 These tools removed the guesswork. Hospitals could drag and drop their files and instantly know if they were compliant. It also helped rural hospitals confirm that their third-party contractors were doing the job right. Saving both time and money.
 
 <strong>How much time did it save?</strong> We estimated that this simple tool could save hospitals across the country more than 900,000 hours per year.
 
-This was also one of the <a href="https://www.cms.gov/digital-service/transparency#:~:text=Hospital%20price%20transparency%20(HPT)%20helps,pricing%20data%20on%20their%20websites.">Open Source Program Office at the Centers for Medicare and Medicaid Services early wins</a> in being able to point to how open source tools could provide direct impact and savings to the healthcare system.
+This was also <a href="https://www.cms.gov/digital-service/transparency#:~:text=Hospital%20price%20transparency%20(HPT)%20helps,pricing%20data%20on%20their%20websites.">Open Source Program Office at the Centers for Medicare and Medicaid Services early wins</a> and is pointed to as one of the reasons why Open Source technology is the right thing to do in government.
 
 <strong>See more about this across the web:</strong>
+
+* [CMS releases tool to validate price transparency file compliance (American Hospital Association)](https://www.aha.org/news/headline/2024-03-28-cms-releases-tool-validate-price-transparency-file-compliance)
+* [CMS releases tool to help hospitals with price transparency (Tech Target)](https://www.techtarget.com/revcyclemanagement/news/366600178/CMS-releases-tool-to-help-hospitals-with-price-transparency)
