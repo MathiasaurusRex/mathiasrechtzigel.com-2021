@@ -59,11 +59,9 @@ url: https://www.mathiasrechtzigel.com/work/emergency-medical-treatment-and-labo
 <p>
   Behind the scenes, we connected to a backend system called ASPEN, which routes cases to state survey agencies that investigate hospitals. That infrastructure worked, but it was old and had never been made available to the public before.
 </p>
+<img src="/img/emtala/emtala-aspen.png" alt="Image of back end system where intake specialists triage issues."/>
 <p>
-  &lt;screenshot of aspect&gt; - You can actually see guides of the ASPEN portal online. Not very user friendly, but the professionals knew it like the back of their hand.
-</p>
-<p>
-  To bridge that gap, I worked across CMS, HHS, and the White House’s Office of Information and Regulatory Affairs to create a trauma-informed, four-question form that avoided government jargon:
+  Not very user friendly., but the intake specialists knew it like the back of their hand. To bridge the gap, between specialists and the public I worked across CMS, HHS, and the White House’s Office of Information and Regulatory Affairs to create a trauma-informed, four-question form that avoided government jargon:
 </p>
 <ol>
   <li>Would you like to provide contact information or file anonymously?</li>
@@ -76,12 +74,14 @@ url: https://www.mathiasrechtzigel.com/work/emergency-medical-treatment-and-labo
   We tested the form with advocacy groups, patients, and frontline organizations to make sure it was easy to use. Because for some people they may be in distress or navigating trauma for one of the worst days of their life. We wanted to make sure that this was as simple as possible… because it truly mattered.
 </p>
 <p>Another goal was that the average person could submit an issue in under 5 minutes. We wanted to reduce the administrative burden as much as possible and shift the burden onto the government.</p>
-<p>&lt;Image of educational resources&gt; / &lt;Image of Form&gt;</p>
+<img src="/img/emtala/emtala-form.png" alt="Screenshot of EMTALA complaint form with anonymous selected."/>
 
 <h2>Impact</h2>
-<p>
-  This work brought EMTALA protections to life for the public, and not just for lawyers and regulators. It gave patients and providers a real path to report harm, anonymously if needed, and helped federal agencies respond more quickly to civil rights violations in emergency rooms. In the first 5 months of 2024, we saw double the increase of enforcement actions from 2022.
-</p>
+
+This work brought EMTALA protections to life for the public, and not just for lawyers and regulators. It gave patients and providers a real path to report harm, anonymously if needed, and helped federal agencies respond more quickly to civil rights violations in emergency rooms. In the first 5 months of 2024, we saw double the increase of enforcement actions from 2022.
+
+In 2025, EMTALA is still being monitored and updated by the new administration.
+
 
 <h3>Reporting across the web:</h3>
 <ul>
@@ -93,102 +93,3 @@ url: https://www.mathiasrechtzigel.com/work/emergency-medical-treatment-and-labo
   </li>
 </ul>
 </section>
-
-<script>
-function initComparisons() {
-  var x, i;
-  /* Find all elements with an "overlay" class: */
-  x = document.getElementsByClassName("img-comp-overlay");
-  for (i = 0; i < x.length; i++) {
-    /* Once for each "overlay" element:
-    pass the "overlay" element as a parameter when executing the compareImages function: */
-    compareImages(x[i]);
-  }
-  function compareImages(img) {
-    var slider, img, clicked = 0, w, h;
-    /* Get the width and height of the img element */
-    w = img.offsetWidth;
-    h = img.offsetHeight;
-    /* Set the width of the img element to 50%: */
-    img.style.width = (w / 2) + "px";
-    /* Create slider: */
-    slider = document.createElement("DIV");
-    slider.setAttribute("class", "img-comp-slider");
-    /* Insert slider */
-    img.parentElement.insertBefore(slider, img);
-    /* Position the slider in the middle: */
-    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
-    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
-    /* Execute a function when the mouse button is pressed: */
-    slider.addEventListener("mousedown", slideReady);
-    /* And another function when the mouse button is released: */
-    window.addEventListener("mouseup", slideFinish);
-    /* Or touched (for touch screens: */
-    slider.addEventListener("touchstart", slideReady);
-     /* And released (for touch screens: */
-    window.addEventListener("touchend", slideFinish);
-    function slideReady(e) {
-      /* Prevent any other actions that may occur when moving over the image: */
-      e.preventDefault();
-      /* The slider is now clicked and ready to move: */
-      clicked = 1;
-      /* Execute a function when the slider is moved: */
-      window.addEventListener("mousemove", slideMove);
-      window.addEventListener("touchmove", slideMove);
-    }
-    function slideFinish() {
-      /* The slider is no longer clicked: */
-      clicked = 0;
-    }
-    function slideMove(e) {
-      var pos;
-      /* If the slider is no longer clicked, exit this function: */
-      if (clicked == 0) return false;
-      /* Get the cursor's x position: */
-      pos = getCursorPos(e)
-      /* Prevent the slider from being positioned outside the image: */
-      if (pos < 0) pos = 0;
-      if (pos > w) pos = w;
-      /* Execute a function that will resize the overlay image according to the cursor: */
-      slide(pos);
-    }
-    function getCursorPos(e) {
-      var a, x = 0;
-      e = e || window.event;
-      /* Get the x positions of the image: */
-      a = img.getBoundingClientRect();
-      /* Calculate the cursor's x coordinate, relative to the image: */
-      x = e.pageX - a.left;
-      /* Consider any page scrolling: */
-      x = x - window.pageXOffset;
-      return x;
-    }
-    function slide(x) {
-      /* Resize the image: */
-      img.style.width = x + "px";
-      /* Position the slider: */
-      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
-    }
-  }
-}
-
-
-if(document.documentElement.scrollWidth > 1000) {
-  initComparisons();
-}
-</script>
-
-<style>
-  @media(min-width: 1000px) {
-    .img-comp-container {
-        width: calc(100% + 600px);
-        height: 830px;
-        position: relative;
-        margin-left: -300px;
-        margin-right: -300px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        box-shadow: var(--box-shadow);
-      }
-  }
-</style>
