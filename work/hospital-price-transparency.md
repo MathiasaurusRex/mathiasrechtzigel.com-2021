@@ -31,14 +31,14 @@ Through user research with hospitals, billing specialists, and service providers
 
 ## Our first prototype: an easy-to-use validator
 
-As any good content strategist knows, you have to make sure that you lead with content first. Content in this context meant formatting the chargemaster to meet the needs of the public. 
-
 To reduce the burden, we built a simple prototype. Hospitals could upload their pricing file and check it against an open-source data dictionary. If their file met the content requirements, they would get immediate confirmation.
 
 I modeled the tool after web-based validators like the WebAIM contrast checker, HTML5 validators, and Lighthouse tools in Chrome. Our goal was to make validation as simple and reliable as possible. This was only one in a series of tools that you can find on the Hospital Price Transparency website.
 
 <img src="/img/hpt/hpt-upload.png" alt="Hospital Price Transparency Upload"/>
 <img src="/img/hpt/hpt-results.png" alt="Hospital Price Transparency Results page"/>
+
+This gave immediate feedback. During our user research we heard of small hospitals paying thousands of dollars for this type of feedback. In further user research, we found that despite those fees, the consultants they were working with were still getting it wrong (because they didn't have a trusted validator either). This took the guesswork out of the equation and got us closer to our goal. 
 
 ## Continous improvement
 
