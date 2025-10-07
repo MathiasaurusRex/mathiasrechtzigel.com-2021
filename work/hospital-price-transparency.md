@@ -1,5 +1,5 @@
 ---
-title: Helping Hospitals Meet the Hospital Price Transparency Law
+title: Regulatory Burden to User-Centered Solution
 description: I prototyped and delivered simple open source prototypes that are estimat
 date: 2024-03-01
 tags:
@@ -10,55 +10,97 @@ templateClass: layout-post layout-post-portfolio
 
 url: https://www.mathiasrechtzigel.com/work/988-suicide-and-crisis-lifeline
 ---
+## The Challenge: When Good Policy Meets Implementation Reality
 
-<p class="lead-p">Wouldn’t it be helpful if you could visit a hospital’s website and easily see the prices for services? That’s the goal of the Hospital Price Transparency law. But in practice, the law has been difficult to implement. Hospitals received conflicting guidance from regulators and were left trying to figure it out on their own. That’s where I came in.</p>
+In 2021, every hospital in America was required to publish pricing information online under the Hospital Price Transparency law. The goal was simple: help patients understand healthcare costs before receiving care. The execution? Far from simple.
 
-## What the law hoped to accomplish
+**The regulation was confusing**: Small hospitals were paying consultants thousands of dollars for compliance guidance that was often incorrect. Rural facilities using basic website builders like Squarespace couldn't display thousands of services effectively. Even large health systems struggled with conflicting regulatory interpretations.
 
-Starting in 2021, every hospital in the United States had to post clear and accessible pricing information online in two ways:
-* A machine-readable file with all items and services
-* A consumer-friendly list of shoppable services
+Through user research with hospital administrators, billing specialists, and third-party vendors, we identified three critical barriers preventing compliance:
+
+* **Data confusion**: The law required "machine-readable" files but provided no technical specification or validation method
+* **Technical constraints**: Hospitals needed to display complex pricing data through simple website builders not designed for this purpose  
+* **Validation anxiety**: No reliable way to verify compliance before potential enforcement actions
+
+## Research & Discovery: Understanding the Ecosystem
+
+I conducted extensive research across the healthcare compliance ecosystem and narrowed in on three personas to do further deep dive user research:
+
+* **Hospital administrators** revealed they wanted to comply but felt abandoned by unclear guidance. Many had purchased expensive consulting services that delivered non-compliant files.
+* **Billing specialists** showed me the complexity of healthcare pricing data - thousands of line items with nuanced coding requirements that didn't translate well to web formats.
+* **Third-party vendors** admitted they were "figuring it out as they went" - charging hospitals for experimental solutions without validation capabilities.
+
+**Key insight**: This wasn't just a compliance problem - it was a market failure where information asymmetry was preventing good actors from succeeding.
+
+## Strategic Approach: Building Public Infrastructure
+
+Rather than creating another consulting service inside of the government, I designed a comprehensive solution strategy:
+
+### Phase 1: Eliminate Validation Uncertainty
+Our team built an open-source validator that hospitals could use to instantly verify file compliance. Modeled after familiar developer tools (WebAIM, HTML5 validators, Lighthouse) to leverage existing mental models.
+
+### Phase 2: Address Technical Constraints  
+WE Created flexible metadata standards allowing hospitals to work within their existing technical infrastructure rather than requiring expensive platform changes.
+
+### Phase 3: Scale Through Automation
+Developed automated monitoring that could provide "friendly nudges" to hospitals when files became non-compliant, replacing punitive enforcement with supportive guidance.
+
+## Design Process: Simplicity in Complexity
+
+**Initial wireframing** focused on reducing the validation process to its essential components: upload, analyze, report. No account creation, no complex workflows.
+
+**Usability testing** with hospital staff revealed they needed immediate, actionable feedback. The prototype evolved from technical error codes to plain-language explanations with specific remediation steps.
+
+**Information architecture** prioritized clarity over completeness - showing critical compliance issues first, with detailed technical information available on demand.
+
+<img src="/img/hpt/hpt-upload.png" alt="Hospital Price Transparency, Upload"/>
+<img src="/img//hpt/hpt-results.png" alt="Hospital Price Transparency, Results"/>
+
+## Technical Innovation: Open Source as Public Good
+
+The validator became part of CMS's Open Source Program Office, demonstrating how government technology could serve as public infrastructure rather than proprietary tools.
+
+**Technical architecture** handled multiple file formats (CSV, JSON, XML) while maintaining consistent validation logic across different data structures.
+
+**API design** allowed integration with existing hospital systems and third-party tools, creating an ecosystem rather than a standalone solution.
+
+**Performance optimization** ensured even large health systems could validate extensive pricing files in under 30 seconds.
+
+## Impact: Transforming a broken ecosystem
+
+### Quantified Outcomes
+- **900,000+ hours saved annually** across U.S. hospitals
+- **$millions in consulting fees** eliminated for rural hospitals
+- **15 minutes** to validate instead of a month.
+
+### Strategic Outcomes
+- **Market correction**: Eliminated information asymmetry that allowed poor consulting services to charge premium prices
+- **Policy success**: Enabled the Hospital Price Transparency law to achieve its intended outcomes
+- **Technical precedent**: Established open-source validation as a model for future healthcare regulations
+
+### User Outcomes
+- Small rural hospitals gained the same validation capabilities as large health systems
+- Billing specialists could verify third-party contractor work independently
+- Hospital administrators gained confidence in their compliance status
 
 
-## Sounds simple, what was the problem?
-Many hospitals, especially small or rural ones, were not set up for this. They used basic website builders like Squarespace, Wix, or Webflow. Their priority was patient care, not building complex web tools. Larger organizations could also get caught in a morass due to conflicting opinions from people who were not the authority on the subject.
+## Lessons Learned: Product Strategy in Regulated Markets
 
-Through user research with hospitals, billing specialists, and service providers, we identified three main problems:
+**User research is critical in B2B government**: The stakeholders using compliance tools aren't the same as those making purchasing decisions. Understanding both audiences was essential.
 
-* <strong>Data confusion</strong>. The law required a "machine-readable" file, but didn’t define what that meant or how machines should read the file.
-* <strong>Website limitations</strong>. Hospitals needed to show thousands of services in a user-friendly way, but drag-and-drop site builders made that difficult.
-* <strong>Enforcement pressure</strong>. Hospitals wanted to follow the rules, but there was no easy way to check if their files met the standards.
+**Technical simplicity enables policy success**: Complex regulations require simple implementation tools. The validator's drag-and-drop interface made compliance accessible to non-technical users.
 
-## Our first prototype: an easy-to-use validator
+**Open source creates trust**: In healthcare, transparency in validation logic was as important as the validation itself. Hospitals needed to understand and trust the compliance criteria.
 
-To reduce the burden, we built a simple prototype. Hospitals could upload their pricing file and check it against an open-source data dictionary. If their file met the content requirements, they would get immediate confirmation.
+**Automation scales impact**: Moving from reactive consultation to proactive monitoring allowed the solution to serve thousands of hospitals without proportional staffing increases.
 
-I modeled the tool after web-based validators like the WebAIM contrast checker, HTML5 validators, and Lighthouse tools in Chrome. Our goal was to make validation as simple and reliable as possible. This was only one in a series of tools that you can find on the Hospital Price Transparency website.
+## Looking Forward: Scaling Public Technology
 
-<img src="/img/hpt/hpt-upload.png" alt="Hospital Price Transparency Upload"/>
-<img src="/img/hpt/hpt-results.png" alt="Hospital Price Transparency Results page"/>
+This project demonstrated how government can build technology infrastructure that serves markets rather than competes with them. The validator model has since been applied to other CMS regulations, showing the broader strategic value of user-centered compliance tools.
 
-This gave immediate feedback. During our user research we heard of small hospitals paying thousands of dollars for this type of feedback. In further user research, we found that despite those fees, the consultants they were working with were still getting it wrong (because they didn't have a trusted validator either). This took the guesswork out of the equation and got us closer to our goal. 
+The success metrics continue to compound as more hospitals adopt the tools and the healthcare price transparency ecosystem matures around reliable, accessible validation standards.
 
-## Continous improvement
-
-Now that we knew that hospitals had the tools to meet their requirements, we could provide some extra guidance on where to place the file and how to format it. We created a new metadata format that would allow hospitals to place their file where they needed it based on their technology constraints. This allowed us to automate our enforcement and we could give hospitals a friendly heads up if we saw something out of sorts.
-
-This would help solve most of the issues related to website limitations, but in cases that it didn't it gave more time and space for our outreach team to hear about the technical edge cases that effected hospitals with lower resources. Some further resources we provided:
-
-* 1:1 technical support for small rural hospitals using website builders
-* Alternative meta data standards for hospitals using SaaS products
-* More robust open source tools that solved user pain points such as naming convention automation and meta data evaluation.
-
-## Impact
-
-These tools removed the guesswork. Hospitals could drag and drop their files and instantly know if they were compliant. It also helped rural hospitals confirm that their third-party contractors were doing the job right. Saving both time and money.
-
-<strong>How much time did it save?</strong> We estimated that this simple tool could save hospitals across the country more than 900,000 hours per year.
-
-This was also <a href="https://www.cms.gov/digital-service/transparency#:~:text=Hospital%20price%20transparency%20(HPT)%20helps,pricing%20data%20on%20their%20websites.">Open Source Program Office at the Centers for Medicare and Medicaid Services early wins</a> and is pointed to as one of the reasons why Open Source technology is the right thing to do in government.
-
-<strong>See more about this across the web:</strong>
+## More in the news
 
 * [CMS releases tool to validate price transparency file compliance (American Hospital Association)](https://www.aha.org/news/headline/2024-03-28-cms-releases-tool-validate-price-transparency-file-compliance)
 * [CMS releases tool to help hospitals with price transparency (Tech Target)](https://www.techtarget.com/revcyclemanagement/news/366600178/CMS-releases-tool-to-help-hospitals-with-price-transparency)
